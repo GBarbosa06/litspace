@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 const App = () => {
   return (
     <div>
-      <h1>Lit <span>Space</span></h1>
+      <h1 className="text-3xl">Lit <span className="font-bold">Space</span></h1>
 
       <BrowserRouter>
         <div className="container">
