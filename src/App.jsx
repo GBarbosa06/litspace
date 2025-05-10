@@ -1,22 +1,25 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
+import Navbar from "./components/Navbar"
+
+import Register from "./pages/Register/Register"
 
 const App = () => {
   return (
-    <div>
-      <h1 className="text-3xl">Lit <span className="font-bold">Space</span></h1>
+    <div className="bg-[#1e1e2f] min-h-screen text-white">
 
       <BrowserRouter>
-        <div className="container">
+        <Navbar />
           <Routes>
             <Route path="/" element={<h2>Home</h2>} />
             <Route path="/about" element={<h2>About</h2>} />
+            <Route path="/cadastro" element={<Register />} />
+            <Route path="/login" element={<h2>Login</h2>} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
           <div className="footer">
-            <p>Lit Space &copy; 2023</p>
+            <p>Lit Space &copy; 2025</p>
             <p>All rights reserved</p>
           </div>
-        </div>
       </BrowserRouter>
     </div>
   )
