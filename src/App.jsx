@@ -28,7 +28,7 @@ const App = () => {
       </div>
     );
   }
-
+  
   return (
     <div className="bg-[#1e1e2f] min-h-screen text-white">
 
@@ -38,8 +38,10 @@ const App = () => {
             <Routes>
               <Route path="/" element={<h2>Home</h2>} />
               <Route path="/about" element={<h2>About</h2>} />
-              <Route path="/cadastro" element={<Register />} />
-              <Route path="/login" element={<h2>Login</h2>} />
+              <Route path="/cadastro" element={!user ? <Register /> : <Navigate to="/" /> } />
+              <Route path="/login" element={!user ? <Register /> : <Navigate to="/" />} />
+              <Route path="/shelf" element={ <h2>Minha estante</h2>} />
+              <Route path="/profile" element={ <h2>Meu perfil</h2>} />
               <Route path="*" element={<Navigate to="/" />} />
             </Routes>
             <div className="footer">
