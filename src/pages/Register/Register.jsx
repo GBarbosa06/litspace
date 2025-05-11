@@ -21,13 +21,6 @@ const Register = () => {
   const { createUser, error: authError, loading } = useAuthentication();
   const navigate = useNavigate()
 
-  const handleShowPassword = () => {
-    setShowPassword(!showPassword);
-  }
-  const handleShowConfirmPassword = () => {
-    setShowConfirmPassword(!showConfirmPassword);
-  }
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError(null);
