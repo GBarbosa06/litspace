@@ -65,8 +65,8 @@
       "index": "aY",
       "roundness": null,
       "seed": 1100231167,
-      "version": 619,
-      "versionNonce": 671989225,
+      "version": 639,
+      "versionNonce": 396159623,
       "isDeleted": false,
       "boundElements": [
         {
@@ -78,7 +78,7 @@
           "type": "arrow"
         }
       ],
-      "updated": 1746897132487,
+      "updated": 1746927460243,
       "link": null,
       "locked": false,
       "text": "- Cadastro/login\n- Página home onde se veem as avaliações\n- Página perfil com edição de posts\n- Página lista de leitura (ou estante de livros)\n    -> pode ser 1 página e 1 componente para os livros que\nestão sendo lidos\n- Página clube do livro (avaliar criação)\n...",
@@ -113,11 +113,11 @@
         "type": 2
       },
       "seed": 1021571187,
-      "version": 334,
-      "versionNonce": 558897353,
+      "version": 355,
+      "versionNonce": 1212888263,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1746897132487,
+      "updated": 1746927460244,
       "link": null,
       "locked": false,
       "points": [
@@ -824,7 +824,7 @@
       "width": 252.1197967529297,
       "height": 125,
       "angle": 0,
-      "strokeColor": "#1e1e1e",
+      "strokeColor": "#f08c00",
       "backgroundColor": "transparent",
       "fillStyle": "solid",
       "strokeWidth": 2,
@@ -836,8 +836,8 @@
       "index": "b08",
       "roundness": null,
       "seed": 2061736543,
-      "version": 299,
-      "versionNonce": 973431241,
+      "version": 300,
+      "versionNonce": 996268423,
       "isDeleted": false,
       "boundElements": [
         {
@@ -845,7 +845,7 @@
           "type": "arrow"
         }
       ],
-      "updated": 1746897594761,
+      "updated": 1746927435032,
       "link": null,
       "locked": false,
       "text": "Abas:\n - home\n - estante (logado)\n - perfil (logado)\n- Login / cadastro (!user)",
@@ -1057,10 +1057,10 @@
     {
       "id": "i3JK8Jq9gdYftFcy-Rfnr",
       "type": "arrow",
-      "x": 1113.5195067985242,
+      "x": 1113.519506798525,
       "y": 254.1948426741437,
-      "width": 191.48716482239956,
-      "height": 26.99136023448483,
+      "width": 191.48716482239888,
+      "height": 26.991360234484887,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -1076,11 +1076,11 @@
         "type": 2
       },
       "seed": 839052863,
-      "version": 94,
-      "versionNonce": 994318249,
+      "version": 115,
+      "versionNonce": 1991705575,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1746897132488,
+      "updated": 1746927460245,
       "link": null,
       "locked": false,
       "points": [
@@ -1089,8 +1089,8 @@
           0
         ],
         [
-          191.48716482239956,
-          -26.99136023448483
+          191.48716482239888,
+          -26.991360234484887
         ]
       ],
       "lastCommittedPoint": null,
@@ -1306,10 +1306,10 @@
     {
       "id": "i5WPMf1Ie2YhwCTBejfhT",
       "type": "text",
-      "x": 782.9822363575004,
-      "y": 581.6997721838339,
+      "x": 784.648903024167,
+      "y": 578.3664388505007,
       "width": 420.52583142686245,
-      "height": 200,
+      "height": 225,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -1323,8 +1323,8 @@
       "index": "b0K",
       "roundness": null,
       "seed": 423617383,
-      "version": 557,
-      "versionNonce": 1629248903,
+      "version": 646,
+      "versionNonce": 130873993,
       "isDeleted": false,
       "boundElements": [
         {
@@ -1332,16 +1332,16 @@
           "type": "arrow"
         }
       ],
-      "updated": 1746921764148,
+      "updated": 1746930627202,
       "link": null,
       "locked": false,
-      "text": "1. Navbar\n2. Autenticação\n    . Cadastro\n        . Contexto da auth\n        . Links para usuarios  autenticados\n    . Botão logout no card\n3. Terminar card\n4. Login",
+      "text": "1. Navbar\n2. Autenticação\n    . Cadastro\n        . Contexto da auth\n        . Links para usuarios  autenticados\n    . Botão logout no card\n    . Login\n    . Terminar card\n3. API google books",
       "fontSize": 20,
       "fontFamily": 5,
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": null,
-      "originalText": "1. Navbar\n2. Autenticação\n    . Cadastro\n        . Contexto da auth\n        . Links para usuarios  autenticados\n    . Botão logout no card\n3. Terminar card\n4. Login",
+      "originalText": "1. Navbar\n2. Autenticação\n    . Cadastro\n        . Contexto da auth\n        . Links para usuarios  autenticados\n    . Botão logout no card\n    . Login\n    . Terminar card\n3. API google books",
       "autoResize": false,
       "lineHeight": 1.25
     },
@@ -1743,7 +1743,7 @@
       "version": 82,
       "versionNonce": 477800839,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1746916779706,
       "link": null,
       "locked": false,
@@ -1837,7 +1837,7 @@
       "version": 15,
       "versionNonce": 2046504199,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1746921668910,
       "link": null,
       "locked": false,
@@ -1901,9 +1901,248 @@
       ],
       "pressures": [],
       "simulatePressure": true,
+      "lastCommittedPoint": null
+    },
+    {
+      "id": "fsrx5vQjXgrKJQrA6DaqC",
+      "type": "text",
+      "x": 1575.3000675528824,
+      "y": 175.7642528449131,
+      "width": 229.99999999999994,
+      "height": 40,
+      "angle": 0.45247488956206716,
+      "strokeColor": "#e03131",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 30,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b0z",
+      "roundness": null,
+      "seed": 1748184137,
+      "version": 176,
+      "versionNonce": 1359521383,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1746927592923,
+      "link": null,
+      "locked": false,
+      "text": "te amo vida\nass.: sua namorada",
+      "fontSize": 16,
+      "fontFamily": 8,
+      "textAlign": "center",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "te amo vida\nass.: sua namorada",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "hNh_rFwvUSFe1yVubmAS8",
+      "type": "freedraw",
+      "x": 802.9375773158336,
+      "y": 712.1508748534297,
+      "width": 11.868755303850094,
+      "height": 26.70469943366254,
+      "angle": 0,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b11",
+      "roundness": null,
+      "seed": 1951075017,
+      "version": 20,
+      "versionNonce": 1393546121,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1746930605778,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0.9890629419876404,
+          1.9781258839750535
+        ],
+        [
+          0.9890629419876404,
+          2.9671888259625803
+        ],
+        [
+          1.9781258839750535,
+          3.956251767950107
+        ],
+        [
+          1.9781258839750535,
+          5.9343776519251605
+        ],
+        [
+          2.9671888259624666,
+          5.9343776519251605
+        ],
+        [
+          2.9671888259624666,
+          6.923440593912574
+        ],
+        [
+          3.956251767950107,
+          7.9125035359001
+        ],
+        [
+          3.956251767950107,
+          6.923440593912574
+        ],
+        [
+          3.956251767950107,
+          3.956251767950107
+        ],
+        [
+          4.94531470993752,
+          0
+        ],
+        [
+          5.9343776519251605,
+          -3.9562517679498796
+        ],
+        [
+          7.912503535899987,
+          -7.912503535899987
+        ],
+        [
+          8.901566477887627,
+          -11.86875530384998
+        ],
+        [
+          10.87969236186268,
+          -14.835944129812447
+        ],
+        [
+          10.87969236186268,
+          -16.814070013787386
+        ],
+        [
+          11.868755303850094,
+          -17.803132955775027
+        ],
+        [
+          11.868755303850094,
+          -18.79219589776244
+        ],
+        [
+          11.868755303850094,
+          -18.79219589776244
+        ]
+      ],
+      "pressures": [],
+      "simulatePressure": true,
+      "lastCommittedPoint": null
+    },
+    {
+      "id": "bUuVLpSEXnmJCHPCreQBx",
+      "type": "freedraw",
+      "x": 800.5931449198107,
+      "y": 739.336227171252,
+      "width": 8.827274512789586,
+      "height": 15.44773039738186,
+      "angle": 0,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b14",
+      "roundness": null,
+      "seed": 212394313,
+      "version": 16,
+      "versionNonce": 824985673,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1746932771025,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          1.1034093140987125,
+          1.1034093140988261
+        ],
+        [
+          2.206818628197425,
+          2.206818628197425
+        ],
+        [
+          3.3102279422961374,
+          3.3102279422961374
+        ],
+        [
+          3.3102279422961374,
+          4.41363725639485
+        ],
+        [
+          4.413637256394736,
+          5.517046570493562
+        ],
+        [
+          5.517046570493562,
+          5.517046570493562
+        ],
+        [
+          5.517046570493562,
+          4.41363725639485
+        ],
+        [
+          4.413637256394736,
+          3.3102279422961374
+        ],
+        [
+          4.413637256394736,
+          0
+        ],
+        [
+          5.517046570493562,
+          -4.413637256394736
+        ],
+        [
+          7.723865198690987,
+          -7.7238651986908735
+        ],
+        [
+          7.723865198690987,
+          -9.930683826888298
+        ],
+        [
+          8.827274512789586,
+          -9.930683826888298
+        ],
+        [
+          8.827274512789586,
+          -9.930683826888298
+        ]
+      ],
+      "pressures": [],
+      "simulatePressure": true,
       "lastCommittedPoint": [
-        13,
-        -12
+        8.827274512789586,
+        -9.930683826888298
       ]
     }
   ],
