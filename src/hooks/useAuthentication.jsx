@@ -46,5 +46,22 @@ export const useAuthentication = () => {
             setLoading(false);
         }
     };
-    return { auth, createUser, error, loading };
+
+
+    const logout = () => {
+        checkIfIsCancelled();
+        setError(null);
+        setLoading(true);
+
+        try {
+            signOut(auth);
+            setLoading(false);
+        } catch (error) {
+            console.log(error.message);
+            setError("Ocorreu um erro ao sair.");
+            setLoading(false);
+        }
+    };
+
+    return { auth, createUser, logout, error, loading };
 }

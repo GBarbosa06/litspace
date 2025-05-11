@@ -1,11 +1,17 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useAuthValue } from "../context/AuthContext";
+import { useAuthentication } from "../hooks/useAuthentication";
 
-export default function UserProfileCard({user}) {
+export default function UserProfileCard() {
   const [showCard, setShowCard] = useState(false);
   const cardRef = useRef(null);
 
-  const toggleCard = () => setShowCard((prev) => !prev);
+  const { user } = useAuthValue();
+  
+  const toggleCard = () => setShowCard(!showCard);
+
+  const {logout} = useAuthentication();
 
   useEffect(() => {
     function handleClickOutside(event) {
@@ -44,22 +50,19 @@ export default function UserProfileCard({user}) {
           >
             <div className="bg-white rounded-2xl border shadow-xl p-4">
               <div className="flex items-center space-x-3">
-                <img
-                  src="https://via.placeholder.com/40"
-                  alt="Avatar"
-                  className="w-10 h-10 rounded-full"
-                />
                 <div>
-                  <p className="font-semibold">Guilherme</p>
-                  <p className="text-sm text-gray-500">Eng. de Software</p>
+                  <p className="font-semibold text-black">{user.displayName}</p>
                 </div>
               </div>
 
               <div className="mt-4 space-y-2">
-                <button className="w-full border rounded-md px-4 py-2 hover:bg-gray-100 transition">
-                  Ver Perfil
-                </button>
-                <button className="w-full bg-red-500 text-white rounded-md px-4 py-2 hover:bg-red-600 transition">
+                {/* <button className="w-full border rounded-md px-4 py-2 hover:bg-gray-100 transition">
+Ver Perfil
+</button> */}
+                <button
+                  className="w-full bg-red-500 text-white rounded-md px-4 py-2 hover:bg-red-600 transition"
+                  onClick={logout}
+                >
                   Sair
                 </button>
               </div>

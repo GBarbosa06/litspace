@@ -43,7 +43,7 @@ const Navbar = () => {
                 </NavLink>
             </li>
             {user && <li className="inline-block mx-4">
-                <UserProfileCard user={user} />
+                <UserProfileCard />
             </li>}
         </ul>
     </nav>
