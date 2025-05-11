@@ -31,11 +31,11 @@ const Navbar = () => {
                 </NavLink>
             </li>}
 
-            {user && <li className="inline-block mx-4">
+            {/* {user && <li className="inline-block mx-4">
                 <NavLink to="/shelf" className={({ isActive }) => (isActive ? styles.isActive : undefined)}>
                 Minha estante
                 </NavLink>
-            </li>}
+            </li>} */}
 
             <li className="inline-block mx-4">
                 <NavLink to="/about" className={({ isActive }) => (isActive ? styles.isActive : undefined)}>

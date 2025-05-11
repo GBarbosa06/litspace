@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useAuthValue } from "../context/AuthContext";
 import { useAuthentication } from "../hooks/useAuthentication";
+import { useNavigate } from "react-router-dom";
 
 export default function UserProfileCard() {
   const [showCard, setShowCard] = useState(false);
@@ -10,6 +11,8 @@ export default function UserProfileCard() {
   const { user } = useAuthValue();
   
   const toggleCard = () => setShowCard(!showCard);
+
+  const navigate = useNavigate();
 
   const {logout} = useAuthentication();
 
@@ -56,11 +59,11 @@ export default function UserProfileCard() {
               </div>
 
               <div className="mt-4 space-y-2">
-                {/* <button className="w-full border rounded-md px-4 py-2 hover:bg-gray-100 transition">
-                Ver Perfil
-                </button> */}
+                <button className="w-full border rounded-md px-4 py-2 bg-[#5d5fef] hover:bg-blue-600 transition cursor-pointer" onClick={() => navigate("/shelf")}>
+                  Minha estante
+                </button>
                 <button
-                  className="w-full bg-red-500 text-white rounded-md px-4 py-2 hover:bg-red-600 transition"
+                  className="w-full bg-red-500 text-white rounded-md px-4 py-2 hover:bg-red-600 transition cursor-pointer"
                   onClick={logout}
                 >
                   Sair
