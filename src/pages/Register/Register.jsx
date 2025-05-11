@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import { Eye, EyeOff } from 'lucide-react';
 
 // hooks
 import { useAuthentication } from '../../hooks/useAuthentication';
@@ -13,10 +14,19 @@ const Register = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [error, setError] = useState(null);
 
   const { createUser, error: authError, loading } = useAuthentication();
   const navigate = useNavigate()
+
+  const handleShowPassword = () => {
+    setShowPassword(!showPassword);
+  }
+  const handleShowConfirmPassword = () => {
+    setShowConfirmPassword(!showConfirmPassword);
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -71,23 +81,33 @@ const Register = () => {
       </Label>
       <Label>
           <span className=' text-[#ccc] font-bold'>Senha: </span>
+          <div className='flex gap-2 items-center'>
           <Input 
-          type="password" 
+          type={showPassword ? "text" : "password"}
           name="password"
           placeholder="Digite sua senha" 
           onChange={(e) => setPassword(e.target.value)}
           value={password}
           required />
+          <button type="button" onClick={() => setShowPassword(!showPassword)} className='cursor-pointer'>
+              {showPassword ? <EyeOff /> : <Eye />}
+            </button>
+          </div>
       </Label>
       <Label>
           <span className=' text-[#ccc] font-bold'>Confirme sua senha: </span>
-          <Input 
-          type="password" 
-          name="confirmPassword"
-          placeholder="Repita senha"
-          onChange={(e) => setConfirmPassword(e.target.value)} 
-          value={confirmPassword}
-          required />
+          <div className='flex gap-2 items-center'>
+            <Input
+            type={showConfirmPassword ? "text" : "password"}
+            name="confirmPassword"
+            placeholder="Repita senha"
+            onChange={(e) => setConfirmPassword(e.target.value)}
+            value={confirmPassword}
+            required />
+            <button type="button" onClick={() => setShowConfirmPassword(!showConfirmPassword)} className='cursor-pointer'>
+              {showConfirmPassword ? <EyeOff /> : <Eye />}
+            </button>
+          </div>
       </Label>
       {!loading && <button className='btn'>Cadastrar</button>}
       {loading && <p className='text-[#ccc]'>Aguarde...</p>}

@@ -57,8 +57,8 @@ export default function UserProfileCard() {
 
               <div className="mt-4 space-y-2">
                 {/* <button className="w-full border rounded-md px-4 py-2 hover:bg-gray-100 transition">
-Ver Perfil
-</button> */}
+                Ver Perfil
+                </button> */}
                 <button
                   className="w-full bg-red-500 text-white rounded-md px-4 py-2 hover:bg-red-600 transition"
                   onClick={logout}

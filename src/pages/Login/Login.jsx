@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import { Eye, EyeOff } from 'lucide-react';
 
 // hooks
 import { useAuthentication } from '../../hooks/useAuthentication';
@@ -11,6 +12,7 @@ import Label from '../../components/Label';
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+    const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState(null);
 
   const { login, error: authError, loading } = useAuthentication();
@@ -54,13 +56,19 @@ const Login = () => {
       </Label>
       <Label>
           <span className=' text-[#ccc] font-bold'>Senha: </span>
-          <Input 
-          type="password" 
-          name="password"
-          placeholder="Digite sua senha" 
-          onChange={(e) => setPassword(e.target.value)}
-          value={password}
-          required />
+          <div className='flex items-center gap-2'>
+              <Input
+              type={showPassword ? "text" : "password"}
+              name="password"
+              placeholder="Digite sua senha"
+              onChange={(e) => setPassword(e.target.value)}
+              value={password}
+              required />
+                <button type="button" onClick={() => setShowPassword(!showPassword)} className='cursor-pointer'>
+                    {showPassword ? <EyeOff /> : <Eye />}
+                </button>
+          </div>
+
       </Label>
       {!loading && <button className='btn'>Entrar</button>}
       {loading && <p className='text-[#ccc]'>Aguarde...</p>}
