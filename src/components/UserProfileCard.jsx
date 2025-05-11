@@ -33,7 +33,7 @@ export default function UserProfileCard() {
     <div className="relative inline-block">
       <button
         onClick={toggleCard}
-        className="bg-blue-600 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-700 transition"
+        className="bg-[#4b4ddc] text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-700 transition"
       >
         {user.displayName || "Perfil"}
       </button>

@@ -7,6 +7,7 @@ import { useEffect, useState } from "react"
 import Navbar from "./components/Navbar"
 
 import Register from "./pages/Register/Register"
+import Login from "./pages/Login/Login"
 
 const App = () => {
   const [user, setUser] = useState(undefined);
@@ -39,7 +40,7 @@ const App = () => {
               <Route path="/" element={<h2>Home</h2>} />
               <Route path="/about" element={<h2>About</h2>} />
               <Route path="/cadastro" element={!user ? <Register /> : <Navigate to="/" /> } />
-              <Route path="/login" element={!user ? <Register /> : <Navigate to="/" />} />
+              <Route path="/login" element={!user ? <Login /> : <Navigate to="/" />} />
               <Route path="/shelf" element={ user ? <h2>Minha estante</h2> : <Navigate to="/" />} />
               <Route path="/profile" element={ <h2>Meu perfil</h2>} />
               <Route path="*" element={<Navigate to="/" />} />
