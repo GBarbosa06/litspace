@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom"
 import { useAuthValue } from "../context/AuthContext"
+import UserProfileCard from "./UserProfileCard";
 
 const Navbar = () => {
     const { user } = useAuthValue();
@@ -42,9 +43,7 @@ const Navbar = () => {
                 </NavLink>
             </li>
             {user && <li className="inline-block mx-4">
-                <NavLink to={`/profile?q=${user.uid}`} className={({ isActive }) => (isActive ? styles.isActive : "text-[#4b4ddc]")}>
-                {user.displayName}
-                </NavLink>
+                <UserProfileCard user={user} />
             </li>}
         </ul>
     </nav>
