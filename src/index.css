@@ -69,3 +69,16 @@ input:-webkit-autofill {
   box-shadow: 0 0 0 1000px #1e1e2f inset ; /* bg color */
   -webkit-text-fill-color: #ccc ; /* text color */
 }
+
+div::-webkit-scrollbar {
+    width:6px;
+}
+
+div::-webkit-scrollbar-thumb {
+    background-color: #403c5e5e; /* Indigo-500 */
+    border-radius: 10px;
+}
+
+div::-webkit-scrollbar-track {
+    background: #1e1e2f; /* Gray-200 */
+}

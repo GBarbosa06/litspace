@@ -10,7 +10,7 @@ const Navbar = () => {
     }
 
   return (
-    <nav className="w-screen flex justify-between items-center bg-[#2d2d44] p-6 text-white font-['Work_Sans']">
+    <nav className="w-full flex justify-between items-center bg-[#2d2d44] p-6 text-white font-['Work_Sans']">
         <NavLink to="/" className="text-xl">Lit <span className="font-bold ">Space</span></NavLink>
         <ul>
             <li className="inline-block mx-4">
