@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar"
 import Register from "./pages/Register/Register"
 import Login from "./pages/Login/Login"
 import Home from "./pages/Home/Home"
+import About from "./pages/About/About"
 
 const App = () => {
   const [user, setUser] = useState(undefined);
@@ -39,7 +40,7 @@ const App = () => {
           <Navbar />
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/about" element={<h2>About</h2>} />
+              <Route path="/about" element={<About />} />
               <Route path="/cadastro" element={!user ? <Register /> : <Navigate to="/" /> } />
               <Route path="/login" element={!user ? <Login /> : <Navigate to="/" />} />
               <Route path="/shelf" element={ user ? <h2>Minha estante</h2> : <Navigate to="/" />} />
