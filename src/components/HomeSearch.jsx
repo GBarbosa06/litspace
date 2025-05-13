@@ -10,6 +10,12 @@ const HomeSearch = () => {
 
     const { books, loading, error } = useGoogleBooks(query);
 
+    useEffect(() => {
+        if(!query){
+            setSearch(false);
+        }
+    }, [query]);
+
     const handleSearch = (e) => {
         e.preventDefault();
         if (search.trim() === '') {
@@ -28,7 +34,12 @@ const HomeSearch = () => {
             onChange={(e) => setQuery(e.target.value)}
             value={query}
             />
-            <button className='bg-[#ffd369] p-3 rounded-full text-amber-950 font-bold hover:bg-[#ffd350] transition' onClick={() => {setSearch(!search)}}>
+            <button className='bg-[#ffd369] p-3 rounded-full text-amber-950 font-bold hover:bg-[#ffd350] transition' 
+                onClick={() => {
+                    setSearch(!search)
+                    if (search) {
+                        setQuery('');
+                }}}>
                 {!search ? 'Buscar' : 'Cancelar'}
                 </button>
         </form>
