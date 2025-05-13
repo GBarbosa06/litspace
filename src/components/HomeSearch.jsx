@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { NavLink } from 'react-router-dom';
 import Input from './Input';
 import useGoogleBooks from '../hooks/useGoogleBooks';
 import { setLogLevel } from 'firebase/app';
@@ -18,7 +19,7 @@ const HomeSearch = () => {
 
     const handleSearch = (e) => {
         e.preventDefault();
-        if (search.trim() === '') {
+        if (query.trim() === '') {
             alert('Por favor, insira um termo de busca.');
             return;
         }
@@ -48,11 +49,11 @@ const HomeSearch = () => {
         {search && books && books.length > 0 && (
             <div className='flex flex-col w-90 gap-1 mt-2 overflow-y-scroll max-h-80 p-1 border-1 rounded-lg border-[#2d2d44]'>
                 {books.map((book) => (
-                    <div key={book.id} className='bg-[#2d2d44] p-3 rounded-lg shadow-md'>
+                    <NavLink to={`/book/${book.id}`} key={book.id} className='bg-[#2d2d44] p-3 rounded-lg shadow-md'>
                         <h2 className=' w-full text-[#ffd369]'>{book.volumeInfo.title}</h2>
                         {/* <p className='text-[#ccc]'>{book.volumeInfo.description}</p> */}
                         
-                    </div>
+                    </NavLink>
                 ))}
             </div>
         )}
