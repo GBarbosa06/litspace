@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { Navigate, useNavigate, useParams } from 'react-router-dom'
 import useGoogleBookById from '../../hooks/useGoogleBookById'
 
 const Book = () => {
   const { id } = useParams()
   const { book, loading, error } = useGoogleBookById(id)
+
+  const navigate = useNavigate();
 
   const [cover, setCover] = useState('')
   const [title, setTitle] = useState('')
@@ -46,6 +48,14 @@ const Book = () => {
         </div>
       </div>
       )}
+      {!(title && cover && authors.length > 0) && 
+        <div className=' text-center mt-10 min-h-screen'>
+          <h2 className='font-bold text-xl mb-3'>Não encontrado</h2>
+        <button onClick={() => navigate('/')} className='btn'>Voltar</button>  
+        </div>
+        
+      }
+      
     </div>
   )
 }

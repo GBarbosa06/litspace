@@ -5,6 +5,7 @@ import { useAuthentication } from "./hooks/useAuthentication"
 import { useEffect, useState } from "react"
 
 import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
 
 import Register from "./pages/Register/Register"
 import Login from "./pages/Login/Login"
@@ -49,10 +50,7 @@ const App = () => {
               <Route path="/profile" element={ <h2>Meu perfil</h2>} />
               <Route path="*" element={<Navigate to="/" />} />
             </Routes>
-            <div className="footer">
-              <p>Lit Space &copy; 2025</p>
-              <p>All rights reserved</p>
-            </div>
+            <Footer />
         </BrowserRouter>
       </AuthProvider>
     </div>
