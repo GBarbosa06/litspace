@@ -1,4 +1,3 @@
-// useGoogleBookById.js
 import { useEffect, useState } from 'react';
 
 const useGoogleBookById = (id) => {
