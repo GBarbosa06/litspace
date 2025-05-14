@@ -27,17 +27,24 @@ const Book = () => {
   return (
     <div>
       {title && cover && authors.length > 0 && (
-        <div>
-          <div className='flex flex-col items-center'>
+      <div className='w-screen flex flex-row items-center p-10'>
+        <div className='flex flex-col items-center w-[40%]'>
           <img src={cover} alt={title} className='max-h-[500px]' />
           <h2 className='text-[#ffd369] text-2xl font-bold'>{title}</h2>
           <p className='text-xl'>{authors.join(', ')}</p>
-      </div>
-          <div className="mt-4 px-4">
-            <h2 className="text-lg font-bold mb-2">Descrição:</h2>
-            <p>{description}</p>
-          </div>
         </div>
+        <div className="mt-4 px-4 pb-5 w-[60%]">
+            {description && <>
+              <h2 className="text-lg font-bold mb-2">Descrição:</h2>
+              <p className='border-b-1 pb-5 border-gray-600 '>{description}</p>
+            </>}
+            {!description && <h3 className="text-lg font-bold pb-5 border-b-1 border-gray-600 ">Descrição indisponível</h3>}
+            <div className='mt-5 flex flex-col items-center gap-2'>
+              <button className='p-3 bg-[#ffd369] hover:bg-amber-400 transition-colors duration-150 w-80 rounded-2xl cursor-pointer'>Adicionar à estante</button>
+              <button className='p-3 bg-red-400 hover:bg-red-500 transition-colors duration-150 w-80 rounded-2xl cursor-pointer'>Avaliar</button>
+            </div>
+        </div>
+      </div>
       )}
     </div>
   )
