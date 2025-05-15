@@ -9,13 +9,12 @@ const ReviewsList = () => {
 
   return (
     <div>
-      <h2>Avaliações</h2>
       <ul>
         {reviews.map((rev) => (
-          <li key={rev.bid} style={{ border: "1px solid #ccc", padding: "10px", margin: "10px 0" }}>
-            <h3>{rev.title}</h3>
+          <li key={rev.bid} className="bg-">
+            <h3 className="text-xl font-bold">{rev.title}</h3>
             <p>Avaliação de: {rev.owner}</p>
-            <p>Nota: {rev.rating}/10</p>
+            <p>Nota: {rev.rating}/5</p>
             <p>Comentário: {rev.description}</p>
             <small>Registrado em: {rev.createdAt?.toDate().toLocaleString()}</small>
           </li>
