@@ -43,7 +43,7 @@ const Book = () => {
             {!description && <h3 className="text-lg font-bold pb-5 border-b-1 border-gray-600 ">Descrição indisponível</h3>}
             <div className='mt-5 flex flex-col items-center gap-2'>
               <button className='p-3 bg-[#ffd369] hover:bg-amber-400 transition-colors duration-150 w-80 rounded-2xl cursor-pointer'>Adicionar à estante</button>
-              <button className='p-3 bg-red-400 hover:bg-red-500 transition-colors duration-150 w-80 rounded-2xl cursor-pointer'>Avaliar</button>
+              <button className='p-3 bg-red-400 hover:bg-red-500 transition-colors duration-150 w-80 rounded-2xl cursor-pointer' onClick={() => navigate('/review')}>Avaliar</button>
             </div>
         </div>
       </div>
