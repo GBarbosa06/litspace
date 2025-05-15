@@ -23,6 +23,8 @@ const HomeSearch = () => {
             alert('Por favor, insira um termo de busca.');
             return;
         }
+        setSearch(!search)
+        if (search) setQuery('');
     }
 
   return (
@@ -35,12 +37,7 @@ const HomeSearch = () => {
             onChange={(e) => setQuery(e.target.value)}
             value={query}
             />
-            <button className='bg-[#ffd369] p-3 rounded-full text-amber-950 font-bold hover:bg-[#ffd350] transition' 
-                onClick={() => {
-                    setSearch(!search)
-                    if (search) {
-                        setQuery('');
-                }}}>
+            <button className='bg-[#ffd369] p-3 rounded-full text-amber-950 font-bold hover:bg-[#ffd350] transition'>
                 {!search ? 'Buscar' : 'Cancelar'}
                 </button>
         </form>
