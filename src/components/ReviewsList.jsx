@@ -1,9 +1,12 @@
+import { useNavigate } from "react-router-dom";
 import { useFetchDocuments } from "../hooks/useFetchDocuments";
 import { StarRatingShow } from "./StarRatingShow";
 
 
 const ReviewsList = () => {
   const { documents: reviews, loading, error } = useFetchDocuments("reviews");
+  
+  const navigate = useNavigate();
 
   if (loading) return <p>Carregando avaliações...</p>;
   if (error) return <p>Erro: {error}</p>;
@@ -11,12 +14,13 @@ const ReviewsList = () => {
 
 
 
+
   return (
     <div>
       <ul>
         {reviews.map((rev) => (
-          <li key={rev.bid} className="bg-[#2d2d44] px-5 py-2 rounded-2xl max-w-150 flex gap-4">
-            <div>
+          <li key={rev.bid} className="bg-[#2d2d44] px-5 py-2 rounded-2xl max-w-150 flex gap-4 cursor-pointer hover:-translate-y-1.5 transition duration-150" onClick={() => navigate("/book/" + rev.bid)}>
+            <div className="pt-2">
               <StarRatingShow  rating={rev.rating}/>
               <h3 className="text-xl font-bold">{rev.title}</h3>
               <p className="font-bold"><span className="italic">{rev.owner}</span> diz...</p>
