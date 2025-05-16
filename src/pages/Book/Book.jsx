@@ -29,7 +29,7 @@ const Book = () => {
   return (
     <div>
       {title && cover && authors.length > 0 && (
-      <div className='w-screen flex flex-row items-center p-10'>
+      <div className='flex flex-row items-center p-10'>
         <div className='flex flex-col items-center w-[40%]'>
           <img src={cover} alt={title} className='max-h-[500px]' />
           <h2 className='text-[#ffd369] text-2xl font-bold'>{title}</h2>
