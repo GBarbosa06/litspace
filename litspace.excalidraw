@@ -3867,7 +3867,7 @@
       "version": 18,
       "versionNonce": 376314556,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1747348781875,
       "link": null,
       "locked": false,
@@ -3943,10 +3943,7 @@
       ],
       "pressures": [],
       "simulatePressure": true,
-      "lastCommittedPoint": [
-        15.215419915158918,
-        -11.411564936369132
-      ]
+      "lastCommittedPoint": null
     }
   ],
   "appState": {
