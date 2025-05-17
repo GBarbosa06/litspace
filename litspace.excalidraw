@@ -1328,11 +1328,16 @@
       "index": "b0K",
       "roundness": null,
       "seed": 423617383,
-      "version": 1510,
-      "versionNonce": 415148548,
+      "version": 1511,
+      "versionNonce": 1610378035,
       "isDeleted": false,
-      "boundElements": [],
-      "updated": 1747348800880,
+      "boundElements": [
+        {
+          "id": "Dlo06tJsu6Vf9pTrw5yBt",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1747521738335,
       "link": null,
       "locked": false,
       "text": "1. Navbar\n2. Autenticação\n    . Cadastro\n        . Contexto da auth\n        . Links para usuarios  autenticados\n    . Botão logout no card\n    . Login\n3. API google books\n4. Melhorar a mostra da busca dos livros\nextra - página sobre\nextra - adicionar fonte serifada\n5. Retorno dos livros para links -> pagina book\n6. Página individual dos livros (+ botão adicionar\nà estante)\nextra - footer\n7. avaliações\n    .criar página\n    .fazer hook\n    .alinhar hook e front\n    .terminar o front da home\n8. minha estante",
@@ -3944,6 +3949,97 @@
       "pressures": [],
       "simulatePressure": true,
       "lastCommittedPoint": null
+    },
+    {
+      "id": "bpyBg_D06m9_gZ7ZyJF7o",
+      "type": "text",
+      "x": 374.7229416185503,
+      "y": 873.4128538524275,
+      "width": 277.8610046393991,
+      "height": 75,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b28",
+      "roundness": null,
+      "seed": 803069757,
+      "version": 228,
+      "versionNonce": 733436851,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1747521746777,
+      "link": null,
+      "locked": false,
+      "text": "Voltar link somente para\nautenticados da pagina\nreview no routes do App.jsx",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Voltar link somente para autenticados da pagina review no routes do App.jsx",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "Dlo06tJsu6Vf9pTrw5yBt",
+      "type": "arrow",
+      "x": 782.4265539426477,
+      "y": 965.7010640919796,
+      "width": 171.72616335714144,
+      "height": 47.8964129091346,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b29",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1166866227,
+      "version": 156,
+      "versionNonce": 1352881811,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1747521753191,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -98.12923620408083,
+          47.8964129091346
+        ],
+        [
+          -171.72616335714144,
+          2.3364103858115186
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "i5WPMf1Ie2YhwCTBejfhT",
+        "focus": 0.1653210810753519,
+        "gap": 3.0349377044659605
+      },
+      "endBinding": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false
     }
   ],
   "appState": {
