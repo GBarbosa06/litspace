@@ -47,8 +47,7 @@ const App = () => {
               <Route path="/cadastro" element={!user ? <Register /> : <Navigate to="/" /> } />
               <Route path="/login" element={!user ? <Login /> : <Navigate to="/" />} />
 
-              {/* <Route path="/review/:id" element={user ? <CreateReview /> : <Navigate to="/" />} /> */}
-              <Route path="/review/:id" element={<CreateReview />} />
+              <Route path="/review/:id" element={user ? <CreateReview /> : <Navigate to="/" />} />
 
               <Route path="/book/:id" element={<Book />} />
               <Route path="/shelf" element={ user ? <h2>Minha estante</h2> : <Navigate to="/" />} />
