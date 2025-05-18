@@ -1,12 +1,12 @@
 import { useState, useEffect, useReducer } from "react";
 import { db } from "../firebase/config";
-import { collection, onSnapshot, query, orderBy } from "firebase/firestore";
+import { collection, onSnapshot, query, orderBy, where } from "firebase/firestore";
 
 const fetchReducer = (state, action) => {
   switch (action.type) {
     case "LOADING":
       return { loading: true, error: null };
-    case "FETCHED_DOCUMENT":
+    case "FETCHED_DOCS":
       return { documents: action.payload, loading: false, error: null };
     case "ERROR":
       return { documents: null, loading: false, error: action.payload };
@@ -15,7 +15,7 @@ const fetchReducer = (state, action) => {
   }
 };
 
-export const useFetchDocuments = (docCollection) => {
+export const useFetchDocuments = (docCollection, searchField = null, searchValue = null) => {
   const [state, dispatch] = useReducer(fetchReducer, {
     documents: null,
     loading: false,
@@ -25,10 +25,14 @@ export const useFetchDocuments = (docCollection) => {
   useEffect(() => {
     dispatch({ type: "LOADING" });
 
-    const q = query(
-      collection(db, docCollection),
-      orderBy("createdAt", "desc")
-    );
+    let q = collection(db, docCollection);
+
+    if (searchField && searchValue) {
+      q = query(q, where(searchField, "==", searchValue), orderBy("createdAt", "desc"));
+    } else {
+      q = query(q, orderBy("createdAt", "desc"));
+    }
+
 
     const unsubscribe = onSnapshot(
       q,
@@ -37,7 +41,7 @@ export const useFetchDocuments = (docCollection) => {
           id: doc.id,
           ...doc.data(),
         }));
-        dispatch({ type: "FETCHED_DOCUMENT", payload: docs });
+        dispatch({ type: "FETCHED_DOCS", payload: docs });
       },
       (error) => {
         dispatch({ type: "ERROR", payload: error.message });
@@ -45,7 +49,7 @@ export const useFetchDocuments = (docCollection) => {
     );
 
     return () => unsubscribe();
-  }, [docCollection]);
+  }, [docCollection, searchField, searchValue]);
 
   return state;
 };
