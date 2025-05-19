@@ -12,7 +12,8 @@ const AddOnShelf = ({uid, bid, title, authors, cover}) => {
             bid,
             title,
             authors,
-            cover
+            cover,
+            status: "to-read"
         })
         alert("Livro adicionado");
         navigate('/shelf')

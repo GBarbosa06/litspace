@@ -50,7 +50,8 @@ const CreateReview = () => {
           description,
           title,
           cover,
-          owner: user.displayName
+          owner: user.displayName,
+          uid: user.uid
         });
         alert("Avaliação feita!")
         navigate("/")
