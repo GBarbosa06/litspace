@@ -19,8 +19,10 @@ const Register = () => {
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [error, setError] = useState(null);
 
-  const { uid, createUser, error: authError, loading } = useAuthentication();
-  const {insertDocument, response} = useInsertDocument("users");
+  const { createUser, error: authError, loading } = useAuthentication();
+
+  //? for future changes, like shelf or profile sharing
+  const {insertDocument, response} = useInsertDocument("users"); 
   const navigate = useNavigate()
 
   const handleSubmit = async (e) => {
@@ -37,7 +39,7 @@ const Register = () => {
     }
 
     const res = await createUser(user);
-    
+
     // inset document on "users" collection
       await insertDocument({
         name: displayName,

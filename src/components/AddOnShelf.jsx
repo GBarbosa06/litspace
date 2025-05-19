@@ -1,8 +1,11 @@
+import { useNavigate } from 'react-router-dom'
 import { useInsertDocument } from '../hooks/useInsertDocument'
 
 const AddOnShelf = ({uid, bid, title, authors, cover}) => {
 
-    const {insertDocument, response} = useInsertDocument("users/" + uid + "/books")
+    const navigate = useNavigate();
+
+    const {insertDocument, response} = useInsertDocument(`users/${uid}/books`)
 
     const handleAddOnShelf = () => {
         insertDocument({
@@ -11,7 +14,8 @@ const AddOnShelf = ({uid, bid, title, authors, cover}) => {
             authors,
             cover
         })
-        alert("Livro adicionado")
+        alert("Livro adicionado");
+        navigate('/shelf')
     }
 
   return (
