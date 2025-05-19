@@ -1,57 +1,63 @@
 import { useState, useEffect, useReducer } from "react";
 import { db } from "../firebase/config";
-import { collection, addDoc, Timestamp } from "firebase/firestore";
+import {
+  collection,
+  addDoc,
+  setDoc,
+  Timestamp,
+  doc,
+} from "firebase/firestore";
 
 const initialState = {
-    loading: null,
-    error: null,
-}
+  loading: false,
+  error: null,
+};
 
 const insertReducer = (state, action) => {
-    switch(action.type) {
-        case "LOADING":
-            return { loading: true, error: null };
-        case "INSERTED_DOCUMENT":
-            return { loading: false, error: null };
-        case "ERROR":
-            return { loading: false, error: action.payload };
-        default:
-            return state;
+  switch (action.type) {
+    case "LOADING":
+      return { loading: true, error: null };
+    case "SUCCESS":
+      return { loading: false, error: null };
+    case "ERROR":
+      return { loading: false, error: action.payload };
+    default:
+      return state;
+  }
+};
+
+export const useInsertDocument = (collectionName) => {
+  const [response, dispatch] = useReducer(insertReducer, initialState);
+  const [cancelled, setCancelled] = useState(false);
+
+  const safeDispatch = (action) => {
+    if (!cancelled) {
+      dispatch(action);
     }
-}
+  };
 
-export const useInsertDocument = (docCollection) => {
-    const [response, dispatch] = useReducer(insertReducer, initialState);
+  const insertDocument = async (docData, customId = null) => {
+    safeDispatch({ type: "LOADING" });
 
-    const [cancelled, setCancelled] = useState(false);
+    try {
+      const document = { ...docData, createdAt: Timestamp.now() };
 
-    const checkIfIsCancelled = (action) => {
-        if(!cancelled) {
-            dispatch(action);
-        }
+      if (customId) {
+        const docRef = doc(db, collectionName, customId);
+        await setDoc(docRef, document);
+      } else {
+        await addDoc(collection(db, collectionName), document);
+      }
+
+      safeDispatch({ type: "SUCCESS" });
+    } catch (error) {
+      safeDispatch({ type: "ERROR", payload: error.message });
     }
+  };
 
-    const insertDocument = async (document) => {
-        checkIfIsCancelled({ type: "LOADING" });
-        
-        try{
-            const newDocument = { ...document, createdAt: Timestamp.now() };
-            const insertedDocument = await addDoc(collection(db, docCollection), newDocument);
-            checkIfIsCancelled({
-                type: "INSERTED_DOCUMENT",
-                payload: insertedDocument,
-            });
-        } catch (error) {
-            checkIfIsCancelled({
-                type: "ERROR",
-                payload: error.message,
-            });
-        }
-    }
+  useEffect(() => {
+    return () => setCancelled(true);
+  }, []);
 
-    useEffect(() => {
-        return () => setCancelled(true);
-    }, []);
-
-    return { insertDocument, response };
+  return { insertDocument, response };
 };
