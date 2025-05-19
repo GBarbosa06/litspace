@@ -4,6 +4,7 @@ import { Eye, EyeOff } from 'lucide-react';
 
 // hooks
 import { useAuthentication } from '../../hooks/useAuthentication';
+import { useInsertDocument } from '../../hooks/useInsertDocument';
 
 //components
 import Input from '../../components/Input'
@@ -18,7 +19,8 @@ const Register = () => {
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [error, setError] = useState(null);
 
-  const { createUser, error: authError, loading } = useAuthentication();
+  const { uid, createUser, error: authError, loading } = useAuthentication();
+  const {insertDocument, response} = useInsertDocument("users");
   const navigate = useNavigate()
 
   const handleSubmit = async (e) => {
@@ -35,6 +37,15 @@ const Register = () => {
     }
 
     const res = await createUser(user);
+    console.log(res.uid)
+    // inset document on "users" collection
+      await insertDocument({
+        name: displayName,
+        email,
+        createdAt: new Date(),
+        uid: res.uid
+      }); //using uid as doc id
+
     if (res) {
       navigate('/');
     }
