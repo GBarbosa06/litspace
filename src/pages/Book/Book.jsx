@@ -3,9 +3,12 @@ import { Navigate, useNavigate, useParams } from 'react-router-dom'
 import useGoogleBookById from '../../hooks/useGoogleBookById'
 import { useFetchDocuments } from '../../hooks/useFetchDocuments'
 import { StarRatingShow } from '../../components/StarRatingShow'
+import AddOnShelf from '../../components/AddOnShelf'
+import { useAuthValue } from '../../context/AuthContext'
 
 const Book = () => {
   const { id } = useParams()
+  const { user } = useAuthValue(); //to add on shelf
   const { book, loading: googleLoading, error: googleError } = useGoogleBookById(id)
   const { documents: reviews, loading: fetchLoading, error: fetchError} = useFetchDocuments("reviews", "bid", id)
   const navigate = useNavigate();
@@ -44,7 +47,7 @@ const Book = () => {
             </>}
             {!description && <h3 className="text-lg font-bold pb-5 border-b-1 border-gray-600 ">Descrição indisponível</h3>}
             <div className='mt-5 flex flex-col items-center gap-2'>
-              <button className='p-3 bg-[#ffd369] hover:bg-amber-400 transition-colors duration-150 w-80 rounded-2xl cursor-pointer'>Adicionar à estante</button>
+              {user && <AddOnShelf uid={user.uid} bid={id} title={title} authors={authors} cover={cover} />}
               <button className='p-3 bg-red-400 hover:bg-red-500 transition-colors duration-150 w-80 rounded-2xl cursor-pointer' onClick={() => navigate(`/review/${id}`)}>Avaliar</button>
             </div>
         </div>

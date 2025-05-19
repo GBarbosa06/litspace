@@ -44,7 +44,7 @@ const Register = () => {
         email,
         createdAt: new Date(),
         uid: res.uid
-      }); //using uid as doc id
+      }, res.uid); //using uid as doc id
 
     if (res) {
       navigate('/');
