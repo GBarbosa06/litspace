@@ -37,7 +37,7 @@ const Register = () => {
     }
 
     const res = await createUser(user);
-    console.log(res.uid)
+    
     // inset document on "users" collection
       await insertDocument({
         name: displayName,
