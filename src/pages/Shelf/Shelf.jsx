@@ -52,7 +52,7 @@ const Shelf = () => {
 
   return (
     <div className="min-h-screen p-5">
-      <h1 className="text-center text-3xl font-bold">Minha estante</h1>
+      <h1 className="text-center text-3xl font-bold font-['Playfair_Display']">Minha estante</h1>
       <form className="flex flex-row  text-xl">
         <label className="checkbox-wrapper gap-2 border-r border-gray-600 mr-1">
           Nome
@@ -97,7 +97,7 @@ const Shelf = () => {
 
       <div className="flex flex-col">
         <div className="reading min-h-50 p-3 border-b border-gray-600 w-full">
-          <h2 className="text-2xl font-bold text-center font-['Playfair_Display']">
+          <h2 className="text-2xl font-bold text-center">
             Lendo
           </h2>
           {!books.some((book) => book.status === "reading") ? (
@@ -156,7 +156,7 @@ const Shelf = () => {
                       <img
                         src={book.cover}
                         alt={book.title}
-                        className="w-full rounded-md"
+                        className="w-full rounded"
                       />
                     )}
                     {showDate && (
@@ -173,7 +173,7 @@ const Shelf = () => {
         </div>
 
         <div className="to-read min-h-50 border-b p-5 border-gray-600 w-full">
-          <h2 className="text-2xl font-bold text-center font-['Playfair_Display']">
+          <h2 className="text-2xl font-bold text-center">
             Para ler
           </h2>
           {!books.some((book) => book.status === "to-read") ? (
@@ -232,7 +232,7 @@ const Shelf = () => {
                       <img
                         src={book.cover}
                         alt={book.title}
-                        className="w-full rounded-md"
+                        className="w-full rounded"
                       />
                     )}
                     {showDate && (
@@ -249,7 +249,7 @@ const Shelf = () => {
         </div>
 
         <div className="already-read min-h-50 p-5 w-full">
-          <h2 className="text-2xl font-bold text-center font-['Playfair_Display']">
+          <h2 className="text-2xl font-bold text-center">
             Lido
           </h2>
           {!books.some((book) => book.status === "aready-read") ? (
@@ -308,7 +308,7 @@ const Shelf = () => {
                       <img
                         src={book.cover}
                         alt={book.title}
-                        className="w-full rounded-md"
+                        className="w-full rounded"
                       />
                     )}
                     {showDate && (
