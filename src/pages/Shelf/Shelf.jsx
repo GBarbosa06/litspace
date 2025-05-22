@@ -1,7 +1,13 @@
+//hooks
 import { useNavigate } from "react-router-dom";
 import { useFetchDocuments } from "../../hooks/useFetchDocuments";
 import { useAuthValue } from "../../context/AuthContext";
 import { useEffect, useRef, useState } from "react";
+
+//firebase
+import { doc, updateDoc } from "firebase/firestore";
+import { db } from "../../firebase/config";
+
 
 
 //? for future updates, it's needed to put all the '.map's in a component apart
@@ -34,6 +40,17 @@ const Shelf = () => {
     };
   }, []);
 
+  const updateBookStatus = async (bookId, newStatus) => {
+    try {
+      const bookRef = doc(db, `users/${user.uid}/books`, bookId);
+      await updateDoc(bookRef, {
+        status: newStatus,
+      })}
+      catch (error){
+        console.log("Erro ao atualizar o status do livro", error)
+      }
+  }
+
   if (loading) return <p>Carregando estante...</p>;
   if (error) return <p>Erro: {error}</p>;
   if (!books || books.length === 0)
@@ -48,6 +65,7 @@ const Shelf = () => {
   const handleMove = (bookId, status) => {
     console.log(`Mover livro ${bookId} para:`, status);
     setOpenMenuId(null);
+    updateBookStatus(bookId, status);
   };
 
   return (
@@ -121,21 +139,15 @@ const Shelf = () => {
                     >
                       <li
                         className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                        onClick={() => handleMove(book.id, "already-read")}
-                      >
-                        Marcar como Lido
-                      </li>
-                      <li
-                        className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                        onClick={() => handleMove(book.id, "reading")}
-                      >
-                        Mover para Lendo
-                      </li>
-                      <li
-                        className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
                         onClick={() => handleMove(book.id, "to-read")}
                       >
                         Colocar como pendente
+                      </li>
+                      <li
+                        className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                        onClick={() => handleMove(book.id, "already-read")}
+                      >
+                        Marcar como Lido
                       </li>
                       <li
                         className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
@@ -197,22 +209,17 @@ const Shelf = () => {
                     >
                       <li
                         className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                        onClick={() => handleMove(book.id, "already-read")}
-                      >
-                        Marcar como Lido
-                      </li>
-                      <li
-                        className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
                         onClick={() => handleMove(book.id, "reading")}
                       >
                         Mover para Lendo
                       </li>
                       <li
                         className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                        onClick={() => handleMove(book.id, "to-read")}
+                        onClick={() => handleMove(book.id, "already-read")}
                       >
-                        Colocar como pendente
+                        Marcar como Lido
                       </li>
+                      
                       <li
                         className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
                         onClick={() => navigate("/book/" + book.bid)}
@@ -252,11 +259,11 @@ const Shelf = () => {
           <h2 className="text-2xl font-bold text-center">
             Lido
           </h2>
-          {!books.some((book) => book.status === "aready-read") ? (
+          {!books.some((book) => book.status === "already-read") ? (
             <p>Sem livros lidos</p>
           ) : (
             <ul className="flex flex-wrap gap-2">
-              {books.map((book) => (book.status === "aready-read" &&
+              {books.map((book) => (book.status === "already-read" &&
                 <li key={book.id} className="bg-[#2d2d44] px-5 py-5 mt-5 rounded-2xl w-50 flex flex-col justify-between items-center gap-4 relative">
                   {/* 3 dots div */}
                   <div
@@ -271,12 +278,6 @@ const Shelf = () => {
                       ref={menuRef}
                       className="absolute top-10 right-2 bg-white text-black rounded-md shadow-lg z-10 w-40 text-sm"
                     >
-                      <li
-                        className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                        onClick={() => handleMove(book.id, "already-read")}
-                      >
-                        Marcar como Lido
-                      </li>
                       <li
                         className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
                         onClick={() => handleMove(book.id, "reading")}
