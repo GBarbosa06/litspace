@@ -54,7 +54,12 @@ const Shelf = () => {
   if (loading) return <p>Carregando estante...</p>;
   if (error) return <p>Erro: {error}</p>;
   if (!books || books.length === 0)
-    return <p>Nenhum livro na estante ainda.</p>;
+    return (
+    <div className="min-h-screen flex flex-col -translate-y-20 gap-1 justify-center items-center">
+      <h2 className="text-2xl font-bold">Nenhum livro na estante ainda.</h2>
+      <button className="btn" onClick={() => navigate("/")}>Buscar!</button>
+    </div>
+  );
 
   if (!showName && !showCover) {
     alert("Ative pelo menos o título ou a capa");
