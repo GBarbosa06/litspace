@@ -55,9 +55,9 @@ const Shelf = () => {
   if (error) return <p>Erro: {error}</p>;
   if (!books || books.length === 0)
     return (
-    <div className="min-h-screen flex flex-col -translate-y-20 gap-1 justify-center items-center">
+      <div className="my-50 flex flex-col gap-1 justify-center items-center">
       <h2 className="text-2xl font-bold">Nenhum livro na estante ainda.</h2>
-      <button className="btn" onClick={() => navigate("/")}>Buscar!</button>
+      <button className="btn">Buscar!</button>
     </div>
   );
 
@@ -66,7 +66,6 @@ const Shelf = () => {
     setShowName(true);
   }
 
-  // ! to change the book status on firestore
   const handleMove = (bookId, status) => {
     console.log(`Mover livro ${bookId} para:`, status);
     setOpenMenuId(null);
