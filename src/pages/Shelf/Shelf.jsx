@@ -45,7 +45,9 @@ const Shelf = () => {
       const bookRef = doc(db, `users/${user.uid}/books`, bookId);
       await updateDoc(bookRef, {
         status: newStatus,
-      })}
+      })
+      //! ask if the user wants to review the book
+    }
       catch (error){
         console.log("Erro ao atualizar o status do livro", error)
       }
