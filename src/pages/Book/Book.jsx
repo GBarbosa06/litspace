@@ -64,7 +64,7 @@ const Book = () => {
           <h1 className='text-2xl font-bold mb-3'>Avaliações do livro</h1>
           <ul>
             {reviews && reviews?.length > 0 && reviews.map((rev) => (
-              <li key={rev.id} className="bg-[#2d2d44] pl-5 pr-10 py-2 mb-5 rounded-2xl max-w-150 flex justify-between gap-4 cursor-pointer hover:-translate-y-1.5 transition duration-150" onClick={() => navigate("/book/" + rev.bid)}>
+              <li key={rev.id} className="bg-[#2d2d44] pl-5 pr-10 py-2 mb-5 rounded-2xl max-w-150 flex justify-between gap-4 hover:-translate-y-0.5 transition duration-150" onClick={() => navigate("/book/" + rev.bid)}>
                 <div className="pt-2">
                   <StarRatingShow  rating={rev.rating}/>
                   <h3 className="text-xl font-bold">{rev.title}</h3>
