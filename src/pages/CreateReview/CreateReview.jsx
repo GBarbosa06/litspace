@@ -43,7 +43,7 @@ const CreateReview = () => {
         if (rating === 0) {
             setError("Faça uma avaliação")
         }
-
+        //! verify if already has this book on shelf page
         insertDocument({
           bid: id,
           rating,
