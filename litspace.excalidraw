@@ -65,20 +65,16 @@
       "index": "aY",
       "roundness": null,
       "seed": 1100231167,
-      "version": 670,
-      "versionNonce": 1269087324,
+      "version": 671,
+      "versionNonce": 1063664966,
       "isDeleted": false,
       "boundElements": [
         {
           "id": "zwueMVLsp3MJQJXcr_5Pc",
           "type": "arrow"
-        },
-        {
-          "id": "i3JK8Jq9gdYftFcy-Rfnr",
-          "type": "arrow"
         }
       ],
-      "updated": 1747266089084,
+      "updated": 1748132158097,
       "link": null,
       "locked": false,
       "text": "- Cadastro/login\n- Página home onde se veem as avaliações\n- Página lista de leitura (ou estante de livros)\n    -> pode ser 1 página e 1 componente para os livros que\nestão sendo lidos\n- Página clube do livro (avaliar criação) - avaliado e aceite\n...",
@@ -1008,102 +1004,6 @@
       "lastCommittedPoint": null,
       "startBinding": null,
       "endBinding": null,
-      "startArrowhead": null,
-      "endArrowhead": "arrow",
-      "elbowed": false
-    },
-    {
-      "id": "dp0cWI7yhKxR2nBQFXVB6",
-      "type": "text",
-      "x": 1319.006671620924,
-      "y": 208.07091164221353,
-      "width": 237.63986206054688,
-      "height": 25,
-      "angle": 0,
-      "strokeColor": "#e03131",
-      "backgroundColor": "transparent",
-      "fillStyle": "solid",
-      "strokeWidth": 2,
-      "strokeStyle": "solid",
-      "roughness": 1,
-      "opacity": 100,
-      "groupIds": [],
-      "frameId": null,
-      "index": "b0D",
-      "roundness": null,
-      "seed": 605128945,
-      "version": 60,
-      "versionNonce": 193422847,
-      "isDeleted": false,
-      "boundElements": [
-        {
-          "id": "i3JK8Jq9gdYftFcy-Rfnr",
-          "type": "arrow"
-        }
-      ],
-      "updated": 1746745664925,
-      "link": null,
-      "locked": false,
-      "text": "ver cadastro com google",
-      "fontSize": 20,
-      "fontFamily": 5,
-      "textAlign": "left",
-      "verticalAlign": "top",
-      "containerId": null,
-      "originalText": "ver cadastro com google",
-      "autoResize": true,
-      "lineHeight": 1.25
-    },
-    {
-      "id": "i3JK8Jq9gdYftFcy-Rfnr",
-      "type": "arrow",
-      "x": 1102.9274729480853,
-      "y": 254.1948426741437,
-      "width": 202.0791986728384,
-      "height": 26.99136023448483,
-      "angle": 0,
-      "strokeColor": "#1e1e1e",
-      "backgroundColor": "transparent",
-      "fillStyle": "solid",
-      "strokeWidth": 2,
-      "strokeStyle": "solid",
-      "roughness": 1,
-      "opacity": 100,
-      "groupIds": [],
-      "frameId": null,
-      "index": "b0E",
-      "roundness": {
-        "type": 2
-      },
-      "seed": 839052863,
-      "version": 147,
-      "versionNonce": 1517180252,
-      "isDeleted": false,
-      "boundElements": [],
-      "updated": 1747266089085,
-      "link": null,
-      "locked": false,
-      "points": [
-        [
-          0,
-          0
-        ],
-        [
-          202.0791986728384,
-          -26.99136023448483
-        ]
-      ],
-      "lastCommittedPoint": null,
-      "startBinding": {
-        "elementId": "x15_kS_7SBvb9IkiUVWjL",
-        "focus": -0.7342831192952834,
-        "gap": 9.805157325856271
-      },
-      "endBinding": {
-        "elementId": "dp0cWI7yhKxR2nBQFXVB6",
-        "focus": 0.4133301129530049,
-        "gap": 14
-      },
       "startArrowhead": null,
       "endArrowhead": "arrow",
       "elbowed": false
