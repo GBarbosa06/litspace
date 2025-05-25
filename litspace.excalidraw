@@ -7563,7 +7563,7 @@
       "version": 69,
       "versionNonce": 438670855,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1747953968222,
       "link": null,
       "locked": false,
@@ -7606,7 +7606,7 @@
       "version": 113,
       "versionNonce": 1752734441,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1747953985688,
       "link": null,
       "locked": false,
@@ -7643,7 +7643,7 @@
       "version": 27,
       "versionNonce": 153377161,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1747958982244,
       "link": null,
       "locked": false,
@@ -7723,10 +7723,7 @@
       ],
       "pressures": [],
       "simulatePressure": true,
-      "lastCommittedPoint": [
-        13.651278100912236,
-        -5.850547757533832
-      ]
+      "lastCommittedPoint": null
     },
     {
       "id": "o4UZgBcw1bHP6989XcTXy",
@@ -7751,7 +7748,7 @@
       "version": 13,
       "versionNonce": 285043449,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1748019979196,
       "link": null,
       "locked": false,
@@ -7807,10 +7804,7 @@
       ],
       "pressures": [],
       "simulatePressure": true,
-      "lastCommittedPoint": [
-        11.019795488338332,
-        -9.445538990004252
-      ]
+      "lastCommittedPoint": null
     }
   ],
   "appState": {
