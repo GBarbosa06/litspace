@@ -1214,7 +1214,7 @@
       "x": 785.4614916471137,
       "y": 577.5538502275539,
       "width": 473.05451633166865,
-      "height": 900,
+      "height": 1000,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -1228,20 +1228,20 @@
       "index": "b0K",
       "roundness": null,
       "seed": 423617383,
-      "version": 2210,
-      "versionNonce": 1579900455,
+      "version": 2437,
+      "versionNonce": 681879225,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1747959238530,
+      "updated": 1748277166413,
       "link": null,
       "locked": false,
-      "text": "1. Navbar\n2. Autenticação\n    . Cadastro\n        . Contexto da auth\n        . Links para usuarios  autenticados\n    . Botão logout no card\n    . Login\n3. API google books\n4. Melhorar a mostra da busca dos livros\nextra - página sobre\nextra - adicionar fonte serifada\n5. Retorno dos livros para links -> pagina book\n6. Página individual dos livros (+ botão adicionar\nà estante)\nextra - footer\n7. avaliações\n    .criar página\n    .fazer hook\n    .alinhar hook e front\n    .terminar o front da home\n    .mostrar avaliações nos livros individuais\n8. minha estante\n    .fazer protótipo!\n    .adicionar o fetch de livros\n    .fazer divisão por status (ver com chat)\n    .fazer o front da shelf\n    .fazer funcionar as opções dos 3 pontinhos\n    .fazer o drag and drop (avaliar)\nextra. tirar aspecto de link da review em\nbook.jsx\nfinal. remover avaliação e livro da estante\n    .fazer hook de remoção\nfinal. editar avaliação\nextra. adicionar verificação livro já na estante\nextra. opção de avaliar quando o livro for\ncolocado em lido",
+      "text": "1. Navbar\n2. Autenticação\n    . Cadastro\n        . Contexto da auth\n        . Links para usuarios  autenticados\n    . Botão logout no card\n    . Login\n3. API google books\n4. Melhorar a mostra da busca dos livros\nextra - página sobre\nextra - adicionar fonte serifada\n5. Retorno dos livros para links -> pagina book\n6. Página individual dos livros (+ botão adicionar\nà estante)\nextra - footer\n7. avaliações\n    .criar página\n    .fazer hook\n    .alinhar hook e front\n    .terminar o front da home\n    .mostrar avaliações nos livros individuais\n8. minha estante\n    .fazer protótipo!\n    .adicionar o fetch de livros\n    .fazer divisão por status (ver com chat)\n    .fazer o front da shelf\n    .fazer funcionar as opções dos 3 pontinhos\n    .fazer o drag and drop (avaliar)\nextra. tirar aspecto de link da review em\nbook.jsx\nfinal. remover avaliação e livro da estante\n    .fazer hook de remoção\n* remover avaliação\n    - criar verificação de review.uid === user.uid\n    - usarao hook já criado de deleteDocument\nfinal. editar avaliação\nextra. adicionar verificação livro já na estante\nextra. opção de avaliar quando o livro for\ncolocado em lido\nhospedar :)",
       "fontSize": 20,
       "fontFamily": 5,
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": null,
-      "originalText": "1. Navbar\n2. Autenticação\n    . Cadastro\n        . Contexto da auth\n        . Links para usuarios  autenticados\n    . Botão logout no card\n    . Login\n3. API google books\n4. Melhorar a mostra da busca dos livros\nextra - página sobre\nextra - adicionar fonte serifada\n5. Retorno dos livros para links -> pagina book\n6. Página individual dos livros (+ botão adicionar à estante)\nextra - footer\n7. avaliações\n    .criar página\n    .fazer hook\n    .alinhar hook e front\n    .terminar o front da home\n    .mostrar avaliações nos livros individuais\n8. minha estante\n    .fazer protótipo!\n    .adicionar o fetch de livros\n    .fazer divisão por status (ver com chat)\n    .fazer o front da shelf\n    .fazer funcionar as opções dos 3 pontinhos\n    .fazer o drag and drop (avaliar)\nextra. tirar aspecto de link da review em book.jsx\nfinal. remover avaliação e livro da estante\n    .fazer hook de remoção\nfinal. editar avaliação\nextra. adicionar verificação livro já na estante\nextra. opção de avaliar quando o livro for colocado em lido",
+      "originalText": "1. Navbar\n2. Autenticação\n    . Cadastro\n        . Contexto da auth\n        . Links para usuarios  autenticados\n    . Botão logout no card\n    . Login\n3. API google books\n4. Melhorar a mostra da busca dos livros\nextra - página sobre\nextra - adicionar fonte serifada\n5. Retorno dos livros para links -> pagina book\n6. Página individual dos livros (+ botão adicionar à estante)\nextra - footer\n7. avaliações\n    .criar página\n    .fazer hook\n    .alinhar hook e front\n    .terminar o front da home\n    .mostrar avaliações nos livros individuais\n8. minha estante\n    .fazer protótipo!\n    .adicionar o fetch de livros\n    .fazer divisão por status (ver com chat)\n    .fazer o front da shelf\n    .fazer funcionar as opções dos 3 pontinhos\n    .fazer o drag and drop (avaliar)\nextra. tirar aspecto de link da review em book.jsx\nfinal. remover avaliação e livro da estante\n    .fazer hook de remoção\n* remover avaliação\n    - criar verificação de review.uid === user.uid\n    - usarao hook já criado de deleteDocument\nfinal. editar avaliação\nextra. adicionar verificação livro já na estante\nextra. opção de avaliar quando o livro for colocado em lido\nhospedar :)",
       "autoResize": false,
       "lineHeight": 1.25
     },
@@ -7705,6 +7705,182 @@
       "pressures": [],
       "simulatePressure": true,
       "lastCommittedPoint": null
+    },
+    {
+      "id": "4XD2mal6O0pBkxtjF3LrY",
+      "type": "freedraw",
+      "x": 805.4100203406265,
+      "y": 1361.700011284549,
+      "width": 10.076714023863587,
+      "height": 18.13808524295473,
+      "angle": 0,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b3n",
+      "roundness": null,
+      "seed": 1574044951,
+      "version": 14,
+      "versionNonce": 1605760247,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1748276894602,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1.0076714023862223
+        ],
+        [
+          0,
+          2.015342804772672
+        ],
+        [
+          1.007671402386336,
+          4.030685609545344
+        ],
+        [
+          1.007671402386336,
+          6.0460284143182434
+        ],
+        [
+          1.007671402386336,
+          8.061371219090915
+        ],
+        [
+          2.015342804772672,
+          10.076714023863587
+        ],
+        [
+          3.0230142071591217,
+          8.061371219090915
+        ],
+        [
+          5.038357011931794,
+          3.0230142071591217
+        ],
+        [
+          7.053699816704466,
+          -2.0153428047728994
+        ],
+        [
+          10.076714023863587,
+          -6.0460284143182434
+        ],
+        [
+          10.076714023863587,
+          -8.061371219091143
+        ],
+        [
+          10.076714023863587,
+          -8.061371219091143
+        ]
+      ],
+      "pressures": [],
+      "simulatePressure": true,
+      "lastCommittedPoint": [
+        10.076714023863587,
+        -8.061371219091143
+      ]
+    },
+    {
+      "id": "lcugvwUquBOx6Y-YaVuJs",
+      "type": "freedraw",
+      "x": 768.1261784523308,
+      "y": 1338.5235690296624,
+      "width": 12.092056828636487,
+      "height": 19.145756645340953,
+      "angle": 0,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b3p",
+      "roundness": null,
+      "seed": 1453075577,
+      "version": 14,
+      "versionNonce": 595238553,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1748276897498,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          1.0076714023864497,
+          2.015342804772672
+        ],
+        [
+          1.0076714023864497,
+          3.0230142071591217
+        ],
+        [
+          2.0153428047727857,
+          4.030685609545571
+        ],
+        [
+          2.0153428047727857,
+          5.038357011931794
+        ],
+        [
+          3.0230142071591217,
+          6.0460284143182434
+        ],
+        [
+          5.038357011931907,
+          3.0230142071591217
+        ],
+        [
+          6.0460284143182434,
+          -2.015342804772672
+        ],
+        [
+          8.061371219090915,
+          -6.0460284143182434
+        ],
+        [
+          10.076714023863701,
+          -10.076714023863815
+        ],
+        [
+          11.084385426250037,
+          -12.092056828636487
+        ],
+        [
+          12.092056828636487,
+          -13.09972823102271
+        ],
+        [
+          12.092056828636487,
+          -13.09972823102271
+        ]
+      ],
+      "pressures": [],
+      "simulatePressure": true,
+      "lastCommittedPoint": [
+        12.092056828636487,
+        -13.09972823102271
+      ]
     }
   ],
   "appState": {
