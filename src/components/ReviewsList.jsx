@@ -32,8 +32,15 @@ const ReviewsList = () => {
               <div>
                 <StarRatingShow  rating={rev.rating}/>
                 <h3 className="text-xl font-bold">{rev.title}</h3>
-                <p className="font-bold"><span className="italic">{rev.owner}</span> diz...</p>
-                <p className="flex flex-wrap gap-1">"{rev.description}"</p>
+                {rev.description && <>
+                  <p className="font-bold"><span className="italic">{rev.owner}</span> diz...</p>
+                  <p className="flex flex-wrap gap-1">"{rev.description}"</p>
+                </>}
+                {!rev.description &&
+                  <>
+                    <p className="font-bold">Por <span className="italic">{rev.owner}</span></p>
+                  </>
+                }
                 <p className="text-sm"> {rev.createdAt?.toDate().toLocaleString()}</p>
               </div>
               {user.uid === rev.uid && <div className="flex gap-2 cursor-pointer">
