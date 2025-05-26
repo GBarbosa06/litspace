@@ -1228,20 +1228,20 @@
       "index": "b0K",
       "roundness": null,
       "seed": 423617383,
-      "version": 2437,
-      "versionNonce": 681879225,
+      "version": 2443,
+      "versionNonce": 1286194624,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1748277166413,
+      "updated": 1748297386090,
       "link": null,
       "locked": false,
-      "text": "1. Navbar\n2. Autenticação\n    . Cadastro\n        . Contexto da auth\n        . Links para usuarios  autenticados\n    . Botão logout no card\n    . Login\n3. API google books\n4. Melhorar a mostra da busca dos livros\nextra - página sobre\nextra - adicionar fonte serifada\n5. Retorno dos livros para links -> pagina book\n6. Página individual dos livros (+ botão adicionar\nà estante)\nextra - footer\n7. avaliações\n    .criar página\n    .fazer hook\n    .alinhar hook e front\n    .terminar o front da home\n    .mostrar avaliações nos livros individuais\n8. minha estante\n    .fazer protótipo!\n    .adicionar o fetch de livros\n    .fazer divisão por status (ver com chat)\n    .fazer o front da shelf\n    .fazer funcionar as opções dos 3 pontinhos\n    .fazer o drag and drop (avaliar)\nextra. tirar aspecto de link da review em\nbook.jsx\nfinal. remover avaliação e livro da estante\n    .fazer hook de remoção\n* remover avaliação\n    - criar verificação de review.uid === user.uid\n    - usarao hook já criado de deleteDocument\nfinal. editar avaliação\nextra. adicionar verificação livro já na estante\nextra. opção de avaliar quando o livro for\ncolocado em lido\nhospedar :)",
+      "text": "1. Navbar\n2. Autenticação\n    . Cadastro\n        . Contexto da auth\n        . Links para usuarios  autenticados\n    . Botão logout no card\n    . Login\n3. API google books\n4. Melhorar a mostra da busca dos livros\nextra - página sobre\nextra - adicionar fonte serifada\n5. Retorno dos livros para links -> pagina book\n6. Página individual dos livros (+ botão adicionar\nà estante)\nextra - footer\n7. avaliações\n    .criar página\n    .fazer hook\n    .alinhar hook e front\n    .terminar o front da home\n    .mostrar avaliações nos livros individuais\n8. minha estante\n    .fazer protótipo!\n    .adicionar o fetch de livros\n    .fazer divisão por status (ver com chat)\n    .fazer o front da shelf\n    .fazer funcionar as opções dos 3 pontinhos\n    .fazer o drag and drop (avaliar)\nextra. tirar aspecto de link da review em\nbook.jsx\nfinal. remover avaliação e livro da estante\n    .fazer hook de remoção\n* remover avaliação\n    - criar verificação de review.uid === user.uid\n    - usar o hook já criado de deleteDocument\nfinal. editar avaliação\nextra. adicionar verificação livro já na estante\nextra. opção de avaliar quando o livro for\ncolocado em lido\nhospedar :)",
       "fontSize": 20,
       "fontFamily": 5,
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": null,
-      "originalText": "1. Navbar\n2. Autenticação\n    . Cadastro\n        . Contexto da auth\n        . Links para usuarios  autenticados\n    . Botão logout no card\n    . Login\n3. API google books\n4. Melhorar a mostra da busca dos livros\nextra - página sobre\nextra - adicionar fonte serifada\n5. Retorno dos livros para links -> pagina book\n6. Página individual dos livros (+ botão adicionar à estante)\nextra - footer\n7. avaliações\n    .criar página\n    .fazer hook\n    .alinhar hook e front\n    .terminar o front da home\n    .mostrar avaliações nos livros individuais\n8. minha estante\n    .fazer protótipo!\n    .adicionar o fetch de livros\n    .fazer divisão por status (ver com chat)\n    .fazer o front da shelf\n    .fazer funcionar as opções dos 3 pontinhos\n    .fazer o drag and drop (avaliar)\nextra. tirar aspecto de link da review em book.jsx\nfinal. remover avaliação e livro da estante\n    .fazer hook de remoção\n* remover avaliação\n    - criar verificação de review.uid === user.uid\n    - usarao hook já criado de deleteDocument\nfinal. editar avaliação\nextra. adicionar verificação livro já na estante\nextra. opção de avaliar quando o livro for colocado em lido\nhospedar :)",
+      "originalText": "1. Navbar\n2. Autenticação\n    . Cadastro\n        . Contexto da auth\n        . Links para usuarios  autenticados\n    . Botão logout no card\n    . Login\n3. API google books\n4. Melhorar a mostra da busca dos livros\nextra - página sobre\nextra - adicionar fonte serifada\n5. Retorno dos livros para links -> pagina book\n6. Página individual dos livros (+ botão adicionar à estante)\nextra - footer\n7. avaliações\n    .criar página\n    .fazer hook\n    .alinhar hook e front\n    .terminar o front da home\n    .mostrar avaliações nos livros individuais\n8. minha estante\n    .fazer protótipo!\n    .adicionar o fetch de livros\n    .fazer divisão por status (ver com chat)\n    .fazer o front da shelf\n    .fazer funcionar as opções dos 3 pontinhos\n    .fazer o drag and drop (avaliar)\nextra. tirar aspecto de link da review em book.jsx\nfinal. remover avaliação e livro da estante\n    .fazer hook de remoção\n* remover avaliação\n    - criar verificação de review.uid === user.uid\n    - usar o hook já criado de deleteDocument\nfinal. editar avaliação\nextra. adicionar verificação livro já na estante\nextra. opção de avaliar quando o livro for colocado em lido\nhospedar :)",
       "autoResize": false,
       "lineHeight": 1.25
     },
@@ -7729,7 +7729,7 @@
       "version": 14,
       "versionNonce": 1605760247,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1748276894602,
       "link": null,
       "locked": false,
@@ -7789,10 +7789,7 @@
       ],
       "pressures": [],
       "simulatePressure": true,
-      "lastCommittedPoint": [
-        10.076714023863587,
-        -8.061371219091143
-      ]
+      "lastCommittedPoint": null
     },
     {
       "id": "lcugvwUquBOx6Y-YaVuJs",
@@ -7817,7 +7814,7 @@
       "version": 14,
       "versionNonce": 595238553,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1748276897498,
       "link": null,
       "locked": false,
@@ -7877,9 +7874,286 @@
       ],
       "pressures": [],
       "simulatePressure": true,
+      "lastCommittedPoint": null
+    },
+    {
+      "id": "MT4eIU-inD33TT6Bn_AmZ",
+      "type": "freedraw",
+      "x": 765.2486591038928,
+      "y": 1385.8743691819882,
+      "width": 20.15342804772729,
+      "height": 23.176442254886524,
+      "angle": 0,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b3q",
+      "roundness": null,
+      "seed": 1739924928,
+      "version": 15,
+      "versionNonce": 694984256,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1748297367094,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          2.015342804772672,
+          0
+        ],
+        [
+          3.023014207159008,
+          1.0076714023862223
+        ],
+        [
+          4.030685609545344,
+          2.015342804772672
+        ],
+        [
+          6.04602841431813,
+          4.030685609545344
+        ],
+        [
+          7.053699816704466,
+          4.030685609545344
+        ],
+        [
+          7.053699816704466,
+          5.038357011931794
+        ],
+        [
+          7.053699816704466,
+          1.0076714023862223
+        ],
+        [
+          8.061371219090915,
+          -5.038357011931794
+        ],
+        [
+          11.084385426250037,
+          -10.076714023863815
+        ],
+        [
+          15.115071035795381,
+          -14.107399633409159
+        ],
+        [
+          18.138085242954503,
+          -18.13808524295473
+        ],
+        [
+          20.15342804772729,
+          -18.13808524295473
+        ],
+        [
+          20.15342804772729,
+          -18.13808524295473
+        ]
+      ],
+      "pressures": [],
+      "simulatePressure": true,
       "lastCommittedPoint": [
-        12.092056828636487,
-        -13.09972823102271
+        20.15342804772729,
+        -18.13808524295473
+      ]
+    },
+    {
+      "id": "ZACmLenPTUgXNDt9DU1SS",
+      "type": "freedraw",
+      "x": 800.485953893141,
+      "y": 1412.6681537986233,
+      "width": 11.516451250611453,
+      "height": 14.520742881205933,
+      "angle": 0,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b3t",
+      "roundness": null,
+      "seed": 578749888,
+      "version": 15,
+      "versionNonce": 2090122816,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1748297374510,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0.5007152717656709,
+          2.5035763588286954
+        ],
+        [
+          1.5021458152971263,
+          4.506437445891379
+        ],
+        [
+          2.002861087062911,
+          6.008583261188733
+        ],
+        [
+          2.5035763588285818,
+          7.010013804720074
+        ],
+        [
+          3.0042916305942526,
+          7.510729076485859
+        ],
+        [
+          3.0042916305942526,
+          6.50929853295429
+        ],
+        [
+          3.0042916305942526,
+          4.005722174125822
+        ],
+        [
+          4.005722174125708,
+          1.5021458152971263
+        ],
+        [
+          6.008583261188619,
+          -1.5021458152971263
+        ],
+        [
+          9.012874891782872,
+          -4.506437445891379
+        ],
+        [
+          11.015735978845782,
+          -6.50929853295429
+        ],
+        [
+          11.516451250611453,
+          -7.010013804720074
+        ],
+        [
+          11.516451250611453,
+          -7.010013804720074
+        ]
+      ],
+      "pressures": [],
+      "simulatePressure": true,
+      "lastCommittedPoint": [
+        11.516451250611453,
+        -7.010013804720074
+      ]
+    },
+    {
+      "id": "moIwnWN-kiKpi2efikkTC",
+      "type": "freedraw",
+      "x": 800.485953893141,
+      "y": 1438.7053479304407,
+      "width": 12.517881794142909,
+      "height": 20.028610870628654,
+      "angle": 0,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b3u",
+      "roundness": null,
+      "seed": 480153024,
+      "version": 16,
+      "versionNonce": 249875904,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1748297375794,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0.5007152717656709,
+          1.0014305435313418
+        ],
+        [
+          1.0014305435313418,
+          2.002861087062911
+        ],
+        [
+          2.002861087062911,
+          4.005722174125594
+        ],
+        [
+          3.0042916305942526,
+          6.008583261188505
+        ],
+        [
+          3.0042916305942526,
+          7.010013804720074
+        ],
+        [
+          3.0042916305942526,
+          7.510729076485632
+        ],
+        [
+          3.0042916305942526,
+          4.506437445891379
+        ],
+        [
+          4.506437445891379,
+          0.5007152717655572
+        ],
+        [
+          6.50929853295429,
+          -4.005722174125822
+        ],
+        [
+          9.513590163548542,
+          -8.011444348251644
+        ],
+        [
+          11.516451250611453,
+          -10.515020707080112
+        ],
+        [
+          12.517881794142909,
+          -12.017166522377238
+        ],
+        [
+          12.517881794142909,
+          -12.517881794143022
+        ],
+        [
+          12.517881794142909,
+          -12.517881794143022
+        ]
+      ],
+      "pressures": [],
+      "simulatePressure": true,
+      "lastCommittedPoint": [
+        12.517881794142909,
+        -12.517881794143022
       ]
     }
   ],
