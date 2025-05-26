@@ -1,6 +1,7 @@
 //hooks
 import { useNavigate } from "react-router-dom";
 import { useFetchDocuments } from "../../hooks/useFetchDocuments";
+import { useDeleteDocument } from "../../hooks/useDeleteDocument";
 import { useAuthValue } from "../../context/AuthContext";
 import { useEffect, useRef, useState } from "react";
 
@@ -27,6 +28,8 @@ const Shelf = () => {
     error,
   } = useFetchDocuments(`users/${user.uid}/books`);
   const navigate = useNavigate();
+
+  const {deleteDocument} = useDeleteDocument(`users/${user.uid}/books`)
 
   useEffect(() => {
     const handleClickOutside = (e) => {
@@ -144,7 +147,7 @@ const Shelf = () => {
                       className="absolute top-10 right-2 bg-white text-black rounded-md shadow-lg z-10 w-40 text-sm"
                     >
                       <li
-                        className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                        className="px-4 py-2 rounded-t-md hover:bg-gray-100 cursor-pointer"
                         onClick={() => handleMove(book.id, "to-read")}
                       >
                         Colocar como pendente
@@ -160,6 +163,12 @@ const Shelf = () => {
                         onClick={() => navigate("/book/" + book.bid)}
                       >
                         Ver livro
+                      </li>
+                      <li
+                        className="px-4 py-2 bg-red-200 rounded-b-md hover:bg-red-300 cursor-pointer"
+                        onClick={() => deleteDocument(book.id)}
+                      >
+                        Excluir da estante
                       </li>
                     </ul>
                   )}
@@ -214,7 +223,7 @@ const Shelf = () => {
                       className="absolute top-10 right-2 bg-white text-black rounded-md shadow-lg z-10 w-40 text-sm"
                     >
                       <li
-                        className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                        className="px-4 py-2 rounded-t-md hover:bg-gray-100 cursor-pointer"
                         onClick={() => handleMove(book.id, "reading")}
                       >
                         Mover para Lendo
@@ -231,6 +240,12 @@ const Shelf = () => {
                         onClick={() => navigate("/book/" + book.bid)}
                       >
                         Ver livro
+                      </li>
+                      <li
+                        className="px-4 py-2 bg-red-200 rounded-b-md hover:bg-red-300 cursor-pointer"
+                        onClick={() => deleteDocument(book.id)}
+                      >
+                        Excluir da estante
                       </li>
                     </ul>
                   )}
@@ -285,7 +300,7 @@ const Shelf = () => {
                       className="absolute top-10 right-2 bg-white text-black rounded-md shadow-lg z-10 w-40 text-sm"
                     >
                       <li
-                        className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                        className="px-4 py-2 rounded-t-md hover:bg-gray-100 cursor-pointer"
                         onClick={() => handleMove(book.id, "reading")}
                       >
                         Mover para Lendo
@@ -301,6 +316,12 @@ const Shelf = () => {
                         onClick={() => navigate("/book/" + book.bid)}
                       >
                         Ver livro
+                      </li>
+                      <li
+                        className="px-4 py-2 bg-red-200 rounded-b-md hover:bg-red-300 cursor-pointer"
+                        onClick={() => deleteDocument(book.id)}
+                      >
+                        Excluir da estante
                       </li>
                     </ul>
                   )}
