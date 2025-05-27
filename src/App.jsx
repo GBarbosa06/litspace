@@ -14,6 +14,7 @@ import About from "./pages/About/About"
 import Book from "./pages/Book/Book"
 import CreateReview from "./pages/CreateReview/CreateReview"
 import Shelf from "./pages/Shelf/Shelf"
+import EditReview from "./pages/EditReview/EditReview"
 
 const App = () => {
   const [user, setUser] = useState(undefined);
@@ -48,6 +49,7 @@ const App = () => {
               <Route path="/cadastro" element={!user ? <Register /> : <Navigate to="/" /> } />
               <Route path="/login" element={!user ? <Login /> : <Navigate to="/" />} />
               <Route path="/review/:id" element={user ? <CreateReview /> : <Navigate to="/login" />} />
+              <Route path="/edit/:id" element={user ? <EditReview /> : <Navigate to="/login" />} />
               <Route path="/book/:id" element={<Book />} />
               <Route path="/shelf" element={ user ? <Shelf /> : <Navigate to="/login" />} />
               <Route path="/profile" element={ <h2>Meu perfil</h2>} />
