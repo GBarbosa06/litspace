@@ -58,17 +58,17 @@ const CreateReview = () => {
     }
 
     return (
-    <div className="flex flex-col-reverse m-3 items-center md:flex-row md:items-start gap-2 justify-center mt-20 mb-30">
-            <div>
+    <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center m-10 sm:mt-20 mb-20 sm:mb-30 gap-5">
+            <div className="w-full sm:w-auto">
                 {title && <h1 className="text-3xl font-bold">{title}</h1>}
                 {!title && <h1 className="text-3xl font-bold">Livro</h1>}
 
-                <form onSubmit={handleSubmit} className="flex flex-col w-100 items-center">
+                <form onSubmit={handleSubmit} className="flex flex-col w-full items-center sm:items-start">
                     <label className="my-5 w-full">
-                    <h3 className="text-xl">Avaliação:</h3>
+                    <h3 className="text-lg sm:text-xl">Avaliação:</h3>
                     <StarRating onRate={handleRating} /></label>
                     <label className="mb-5 w-full">
-                        <h3 className="text-xl">Opinião:</h3>
+                        <h3 className="text-lg sm:text-xl">Opinião:</h3>
                         <textarea
                             id="opinion"
                             name="opinion"
@@ -82,7 +82,7 @@ const CreateReview = () => {
                     {error && <p className="error">É necessário uma nota de 1 à 5</p>}
                 </form>
             </div>
-            {cover && <img src={cover} alt="title" />}
+            {cover && <img src={cover} alt="title" className="w-full sm:w-auto max-w-xs rounded" />}
     </div>
   )
 }
