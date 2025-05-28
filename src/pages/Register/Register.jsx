@@ -64,7 +64,7 @@ const Register = () => {
     <div className='flex flex-col mt-10 items-center h-screen '>
       <h1 className='text-3xl font-bold'>Registro de usuário</h1>
       <p className='text-sm text-[#696969] mb-5'>Crie uma conta para poder interagir</p>
-    <form className='flex flex-col justify-center items-center gap-5 w-[100%]' onSubmit={handleSubmit}>
+    <form className='flex flex-col justify-center items-center gap-2 md:w-[100%] w-screen' onSubmit={handleSubmit}>
       <Label>
           <span className=' text-[#ccc] font-bold'>Nome: </span>
           <Input 

@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom';
-import Input from './Input';
 import useGoogleBooks from '../hooks/useGoogleBooks';
-import { setLogLevel } from 'firebase/app';
 
 const HomeSearch = () => {
     const [query, setQuery] = useState('');
@@ -30,7 +28,7 @@ const HomeSearch = () => {
   return (
     <div className='flex flex-col items-center justify-center w-[30%]'>
        
-        <form className='flex gap-5' onSubmit={handleSearch}>
+        <form className='flex flex-col md:flex-row justify-center gap-5' onSubmit={handleSearch}>
             <input
             className="font-['Work_Sans'] focus:outline-0 focus:border-b-2 box-border border-b border-[#2d2d44] py-3 bg-transparent w-60 text-[#ccc]"
             placeholder='Busque um livro'
