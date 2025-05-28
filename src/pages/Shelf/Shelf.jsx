@@ -79,8 +79,8 @@ const Shelf = () => {
 
   return (
     <div className="min-h-screen p-5">
-      <h1 className="text-center text-3xl font-bold font-['Playfair_Display']">Minha estante</h1>
-      <form className="flex flex-row  text-xl">
+      <h1 className="text-center text-3xl font-bold mb-3 pb-1 border-b border-gray-400">Minha estante</h1>
+      <form className="flex flex-row justify-center text-xl">
         <label className="checkbox-wrapper gap-2 border-r border-gray-600 mr-1">
           Nome
           <input
@@ -108,7 +108,7 @@ const Shelf = () => {
           <span className="custom-checkbox"></span>
         </label>
         <label className="checkbox-wrapper gap-2">
-          Data
+          Data de adição
           <input
             type="checkbox"
             name="showDate"
