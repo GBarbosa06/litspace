@@ -1212,9 +1212,9 @@
       "id": "i5WPMf1Ie2YhwCTBejfhT",
       "type": "text",
       "x": 785.4614916471137,
-      "y": 577.5538502275539,
+      "y": 576.5993001738126,
       "width": 473.05451633166865,
-      "height": 1000,
+      "height": 925,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -1228,20 +1228,20 @@
       "index": "b0K",
       "roundness": null,
       "seed": 423617383,
-      "version": 2443,
-      "versionNonce": 1286194624,
+      "version": 2446,
+      "versionNonce": 1902038418,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1748297386090,
+      "updated": 1748469466898,
       "link": null,
       "locked": false,
-      "text": "1. Navbar\n2. Autenticação\n    . Cadastro\n        . Contexto da auth\n        . Links para usuarios  autenticados\n    . Botão logout no card\n    . Login\n3. API google books\n4. Melhorar a mostra da busca dos livros\nextra - página sobre\nextra - adicionar fonte serifada\n5. Retorno dos livros para links -> pagina book\n6. Página individual dos livros (+ botão adicionar\nà estante)\nextra - footer\n7. avaliações\n    .criar página\n    .fazer hook\n    .alinhar hook e front\n    .terminar o front da home\n    .mostrar avaliações nos livros individuais\n8. minha estante\n    .fazer protótipo!\n    .adicionar o fetch de livros\n    .fazer divisão por status (ver com chat)\n    .fazer o front da shelf\n    .fazer funcionar as opções dos 3 pontinhos\n    .fazer o drag and drop (avaliar)\nextra. tirar aspecto de link da review em\nbook.jsx\nfinal. remover avaliação e livro da estante\n    .fazer hook de remoção\n* remover avaliação\n    - criar verificação de review.uid === user.uid\n    - usar o hook já criado de deleteDocument\nfinal. editar avaliação\nextra. adicionar verificação livro já na estante\nextra. opção de avaliar quando o livro for\ncolocado em lido\nhospedar :)",
+      "text": "1. Navbar\n2. Autenticação\n    . Cadastro\n        . Contexto da auth\n        . Links para usuarios  autenticados\n    . Botão logout no card\n    . Login\n3. API google books\n4. Melhorar a mostra da busca dos livros\nextra - página sobre\nextra - adicionar fonte serifada\n5. Retorno dos livros para links -> pagina book\n6. Página individual dos livros (+ botão adicionar\nà estante)\nextra - footer\n7. avaliações\n    .criar página\n    .fazer hook\n    .alinhar hook e front\n    .terminar o front da home\n    .mostrar avaliações nos livros individuais\n8. minha estante\n    .fazer protótipo!\n    .adicionar o fetch de livros\n    .fazer divisão por status (ver com chat)\n    .fazer o front da shelf\n    .fazer funcionar as opções dos 3 pontinhos\n    .fazer o drag and drop (avaliar)\nextra. tirar aspecto de link da review em\nbook.jsx\nfinal. remover avaliação e livro da estante\n    .fazer hook de remoção\n* remover avaliação\n    - criar verificação de review.uid === user.uid\n    - usar o hook já criado de deleteDocument\nfinal. editar avaliação\nhospedar :)",
       "fontSize": 20,
       "fontFamily": 5,
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": null,
-      "originalText": "1. Navbar\n2. Autenticação\n    . Cadastro\n        . Contexto da auth\n        . Links para usuarios  autenticados\n    . Botão logout no card\n    . Login\n3. API google books\n4. Melhorar a mostra da busca dos livros\nextra - página sobre\nextra - adicionar fonte serifada\n5. Retorno dos livros para links -> pagina book\n6. Página individual dos livros (+ botão adicionar à estante)\nextra - footer\n7. avaliações\n    .criar página\n    .fazer hook\n    .alinhar hook e front\n    .terminar o front da home\n    .mostrar avaliações nos livros individuais\n8. minha estante\n    .fazer protótipo!\n    .adicionar o fetch de livros\n    .fazer divisão por status (ver com chat)\n    .fazer o front da shelf\n    .fazer funcionar as opções dos 3 pontinhos\n    .fazer o drag and drop (avaliar)\nextra. tirar aspecto de link da review em book.jsx\nfinal. remover avaliação e livro da estante\n    .fazer hook de remoção\n* remover avaliação\n    - criar verificação de review.uid === user.uid\n    - usar o hook já criado de deleteDocument\nfinal. editar avaliação\nextra. adicionar verificação livro já na estante\nextra. opção de avaliar quando o livro for colocado em lido\nhospedar :)",
+      "originalText": "1. Navbar\n2. Autenticação\n    . Cadastro\n        . Contexto da auth\n        . Links para usuarios  autenticados\n    . Botão logout no card\n    . Login\n3. API google books\n4. Melhorar a mostra da busca dos livros\nextra - página sobre\nextra - adicionar fonte serifada\n5. Retorno dos livros para links -> pagina book\n6. Página individual dos livros (+ botão adicionar à estante)\nextra - footer\n7. avaliações\n    .criar página\n    .fazer hook\n    .alinhar hook e front\n    .terminar o front da home\n    .mostrar avaliações nos livros individuais\n8. minha estante\n    .fazer protótipo!\n    .adicionar o fetch de livros\n    .fazer divisão por status (ver com chat)\n    .fazer o front da shelf\n    .fazer funcionar as opções dos 3 pontinhos\n    .fazer o drag and drop (avaliar)\nextra. tirar aspecto de link da review em book.jsx\nfinal. remover avaliação e livro da estante\n    .fazer hook de remoção\n* remover avaliação\n    - criar verificação de review.uid === user.uid\n    - usar o hook já criado de deleteDocument\nfinal. editar avaliação\nhospedar :)",
       "autoResize": false,
       "lineHeight": 1.25
     },
@@ -7899,7 +7899,7 @@
       "version": 15,
       "versionNonce": 694984256,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1748297367094,
       "link": null,
       "locked": false,
@@ -7963,10 +7963,7 @@
       ],
       "pressures": [],
       "simulatePressure": true,
-      "lastCommittedPoint": [
-        20.15342804772729,
-        -18.13808524295473
-      ]
+      "lastCommittedPoint": null
     },
     {
       "id": "ZACmLenPTUgXNDt9DU1SS",
@@ -7991,7 +7988,7 @@
       "version": 15,
       "versionNonce": 2090122816,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1748297374510,
       "link": null,
       "locked": false,
@@ -8055,10 +8052,7 @@
       ],
       "pressures": [],
       "simulatePressure": true,
-      "lastCommittedPoint": [
-        11.516451250611453,
-        -7.010013804720074
-      ]
+      "lastCommittedPoint": null
     },
     {
       "id": "moIwnWN-kiKpi2efikkTC",
@@ -8083,7 +8077,7 @@
       "version": 16,
       "versionNonce": 249875904,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1748297375794,
       "link": null,
       "locked": false,
@@ -8151,9 +8145,888 @@
       ],
       "pressures": [],
       "simulatePressure": true,
+      "lastCommittedPoint": null
+    },
+    {
+      "id": "ZBHVLO_8jh9XNWXWin3Hu",
+      "type": "freedraw",
+      "x": 769.6082045074277,
+      "y": 1463.846906015077,
+      "width": 17.181900967341107,
+      "height": 21.000101182305798,
+      "angle": 0,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b3v",
+      "roundness": null,
+      "seed": 1278129806,
+      "version": 15,
+      "versionNonce": 1657819538,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1748465949264,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0.9545500537412863,
+          0.954550053741059
+        ],
+        [
+          2.8636501612236316,
+          2.863650161223404
+        ],
+        [
+          3.8182002149646905,
+          4.7727502687057495
+        ],
+        [
+          4.772750268705977,
+          6.681850376188095
+        ],
+        [
+          5.727300322447036,
+          7.636400429929381
+        ],
+        [
+          5.727300322447036,
+          6.681850376188095
+        ],
+        [
+          6.681850376188322,
+          2.863650161223404
+        ],
+        [
+          9.545500537411726,
+          -1.9091001074823453
+        ],
+        [
+          13.363700752376417,
+          -7.636400429929381
+        ],
+        [
+          15.272800859858762,
+          -12.40915069863513
+        ],
+        [
+          16.227350913599935,
+          -13.363700752376417
+        ],
+        [
+          17.181900967341107,
+          -13.363700752376417
+        ],
+        [
+          17.181900967341107,
+          -13.363700752376417
+        ]
+      ],
+      "pressures": [],
+      "simulatePressure": true,
       "lastCommittedPoint": [
-        12.517881794142909,
-        -12.517881794143022
+        17.181900967341107,
+        -13.363700752376417
+      ]
+    },
+    {
+      "id": "UlYGdN4y3xTQUHDn4wesL",
+      "type": "freedraw",
+      "x": 768.9776972475025,
+      "y": 1490.2502647260142,
+      "width": 12.409150698635244,
+      "height": 13.363700752376417,
+      "angle": 0,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b3x",
+      "roundness": null,
+      "seed": 1701379406,
+      "version": 87,
+      "versionNonce": 910630286,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1748475694694,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0.9545500537412863,
+          0.9545500537412863
+        ],
+        [
+          2.8636501612236316,
+          2.8636501612236316
+        ],
+        [
+          3.8182002149646905,
+          3.8182002149646905
+        ],
+        [
+          5.727300322447036,
+          4.7727502687057495
+        ],
+        [
+          5.727300322447036,
+          5.727300322447036
+        ],
+        [
+          7.636400429929381,
+          3.8182002149646905
+        ],
+        [
+          8.590950483670554,
+          0.9545500537412863
+        ],
+        [
+          9.545500537411726,
+          -2.863650161223404
+        ],
+        [
+          11.454600644894072,
+          -5.727300322447036
+        ],
+        [
+          12.409150698635244,
+          -7.636400429929381
+        ],
+        [
+          12.409150698635244,
+          -7.636400429929381
+        ]
+      ],
+      "pressures": [],
+      "simulatePressure": true,
+      "lastCommittedPoint": [
+        12.409150698635244,
+        -7.636400429929381
+      ]
+    },
+    {
+      "id": "dlSY5vI5DUY58pZv3Z0vV",
+      "type": "text",
+      "x": 503.13932372814224,
+      "y": 1643.52204521474,
+      "width": 77.01997375488281,
+      "height": 25,
+      "angle": 0,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b42",
+      "roundness": null,
+      "seed": 2061728910,
+      "version": 78,
+      "versionNonce": 1068568786,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1748475692910,
+      "link": null,
+      "locked": false,
+      "text": "FEITO!",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "FEITO!",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "3jQpUzIxfykw9qVzBcFBe",
+      "type": "text",
+      "x": 504.0938737818834,
+      "y": 1677.885847149422,
+      "width": 523.019775390625,
+      "height": 100,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b43",
+      "roundness": null,
+      "seed": 964958158,
+      "version": 99,
+      "versionNonce": 1245639950,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "OoUz9hHXZyHLF_rMMEOzr",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1748475706536,
+      "link": null,
+      "locked": false,
+      "text": "Manutenções futuras:\n* adicionar responsividade\n* adicionar verificação livro já na estante\n* opção de avaliar quando o livro for colocado em lido",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Manutenções futuras:\n* adicionar responsividade\n* adicionar verificação livro já na estante\n* opção de avaliar quando o livro for colocado em lido",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "1BxuKl6K86N6IsaTFMTec",
+      "type": "freedraw",
+      "x": 485.00287270705985,
+      "y": 1709.3859989228806,
+      "width": 12.40915069863513,
+      "height": 13.36370075237619,
+      "angle": 0,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b45",
+      "roundness": null,
+      "seed": 1870054926,
+      "version": 35,
+      "versionNonce": 863798354,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1748475692910,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0.954550053741059,
+          0.9545500537412863
+        ],
+        [
+          1.9091001074823453,
+          2.8636501612236316
+        ],
+        [
+          3.8182002149646905,
+          4.772750268705977
+        ],
+        [
+          3.8182002149646905,
+          6.681850376188322
+        ],
+        [
+          4.7727502687057495,
+          7.636400429929381
+        ],
+        [
+          4.7727502687057495,
+          6.681850376188322
+        ],
+        [
+          5.727300322447036,
+          4.772750268705977
+        ],
+        [
+          5.727300322447036,
+          1.9091001074823453
+        ],
+        [
+          7.636400429929381,
+          -0.954550053741059
+        ],
+        [
+          10.500050591152785,
+          -2.863650161223404
+        ],
+        [
+          12.40915069863513,
+          -4.7727502687057495
+        ],
+        [
+          12.40915069863513,
+          -5.727300322446808
+        ],
+        [
+          12.40915069863513,
+          -5.727300322446808
+        ]
+      ],
+      "pressures": [],
+      "simulatePressure": true,
+      "lastCommittedPoint": [
+        12.40915069863513,
+        -5.727300322446808
+      ]
+    },
+    {
+      "id": "NzqC404Rj-l-KblSr06_h",
+      "type": "text",
+      "x": 894.5048457620209,
+      "y": 1637.794744892293,
+      "width": 182.1875942397952,
+      "height": 64.73685539626203,
+      "angle": 0,
+      "strokeColor": "#e03131",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b46",
+      "roundness": null,
+      "seed": 115025486,
+      "version": 318,
+      "versionNonce": 663956558,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1748475767346,
+      "link": null,
+      "locked": false,
+      "text": "ainda é possível que existam\npequenos erros de\nresponsividade, sendo\nnecessário maior verificação",
+      "fontSize": 12.947371079252406,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "ainda é possível que existam pequenos erros de responsividade, sendo necessário maior verificação",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "OoUz9hHXZyHLF_rMMEOzr",
+      "type": "arrow",
+      "x": 761.1999812000892,
+      "y": 1711.2129778830767,
+      "width": 112.80910485448157,
+      "height": 54.82311637787916,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b48",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 393785806,
+      "version": 82,
+      "versionNonce": 1269802574,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1748475711865,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          40.063046583834534,
+          -28.465848888514074
+        ],
+        [
+          112.80910485448157,
+          -54.82311637787916
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": null,
+      "endBinding": {
+        "elementId": "3jQpUzIxfykw9qVzBcFBe",
+        "focus": 0,
+        "gap": 21.495985644224447
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false
+    },
+    {
+      "id": "P41ugpyDrPpDF5t8turCl",
+      "type": "freedraw",
+      "x": 1123.0471436118019,
+      "y": 120.21870032188957,
+      "width": 7.268681209620354,
+      "height": 4.473034590535605,
+      "angle": 0,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b49",
+      "roundness": null,
+      "seed": 1907261138,
+      "version": 10,
+      "versionNonce": 166394770,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1748475745034,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          1.6773879714507984,
+          0.5591293238169328
+        ],
+        [
+          3.354775942901597,
+          1.6773879714508553
+        ],
+        [
+          4.4730345905354625,
+          2.236517295267788
+        ],
+        [
+          5.5912932381695555,
+          3.3547759429017106
+        ],
+        [
+          6.150422561986488,
+          3.9139052667186434
+        ],
+        [
+          6.709551885803421,
+          3.9139052667186434
+        ],
+        [
+          7.268681209620354,
+          4.473034590535605
+        ],
+        [
+          7.268681209620354,
+          4.473034590535605
+        ]
+      ],
+      "pressures": [],
+      "simulatePressure": true,
+      "lastCommittedPoint": [
+        7.268681209620354,
+        4.473034590535605
+      ]
+    },
+    {
+      "id": "rapHy7m23DpY8Q8CRAXVB",
+      "type": "freedraw",
+      "x": 1116.8967210498154,
+      "y": 134.7560627411303,
+      "width": 7.827810533437287,
+      "height": 0.5591293238169612,
+      "angle": 0,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b4A",
+      "roundness": null,
+      "seed": 430357710,
+      "version": 10,
+      "versionNonce": 512818190,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1748475746076,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0.5591293238169328,
+          0
+        ],
+        [
+          2.2365172952677312,
+          0
+        ],
+        [
+          3.354775942901597,
+          0
+        ],
+        [
+          4.47303459053569,
+          0
+        ],
+        [
+          6.150422561986488,
+          0
+        ],
+        [
+          7.268681209620354,
+          0.5591293238169612
+        ],
+        [
+          7.827810533437287,
+          0.5591293238169612
+        ],
+        [
+          7.827810533437287,
+          0.5591293238169612
+        ]
+      ],
+      "pressures": [],
+      "simulatePressure": true,
+      "lastCommittedPoint": [
+        7.827810533437287,
+        0.5591293238169612
+      ]
+    },
+    {
+      "id": "G4VqCJEuTXSDke1PqPacP",
+      "type": "freedraw",
+      "x": 1120.8106263165341,
+      "y": 150.97081313182193,
+      "width": 12.859974447789682,
+      "height": 7.268681209620382,
+      "angle": 0,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b4B",
+      "roundness": null,
+      "seed": 728287634,
+      "version": 12,
+      "versionNonce": 2107438098,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1748475746735,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          1.1182586476338656,
+          -0.5591293238169328
+        ],
+        [
+          2.2365172952677312,
+          -1.6773879714508553
+        ],
+        [
+          4.4730345905354625,
+          -3.3547759429017106
+        ],
+        [
+          6.150422561986488,
+          -4.473034590535605
+        ],
+        [
+          7.268681209620354,
+          -4.473034590535605
+        ],
+        [
+          9.505198504888085,
+          -5.591293238169527
+        ],
+        [
+          11.741715800155816,
+          -6.709551885803421
+        ],
+        [
+          12.300845123972977,
+          -7.268681209620382
+        ],
+        [
+          12.859974447789682,
+          -7.268681209620382
+        ],
+        [
+          12.859974447789682,
+          -7.268681209620382
+        ]
+      ],
+      "pressures": [],
+      "simulatePressure": true,
+      "lastCommittedPoint": [
+        12.859974447789682,
+        -7.268681209620382
+      ]
+    },
+    {
+      "id": "gfetHnWl_2NBL7olhchgY",
+      "type": "freedraw",
+      "x": 1212.5078354225143,
+      "y": 133.6378040934964,
+      "width": 11.741715800155816,
+      "height": 0,
+      "angle": 0,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b4C",
+      "roundness": null,
+      "seed": 1843960910,
+      "version": 13,
+      "versionNonce": 1262109202,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1748475747745,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0.5591293238169328,
+          0
+        ],
+        [
+          1.1182586476338656,
+          0
+        ],
+        [
+          1.6773879714507984,
+          0
+        ],
+        [
+          3.354775942901597,
+          0
+        ],
+        [
+          5.032163914352395,
+          0
+        ],
+        [
+          6.709551885803421,
+          0
+        ],
+        [
+          8.946069181071152,
+          0
+        ],
+        [
+          10.62345715252195,
+          0
+        ],
+        [
+          11.182586476338884,
+          0
+        ],
+        [
+          11.741715800155816,
+          0
+        ],
+        [
+          11.741715800155816,
+          0
+        ]
+      ],
+      "pressures": [],
+      "simulatePressure": true,
+      "lastCommittedPoint": [
+        11.741715800155816,
+        0
+      ]
+    },
+    {
+      "id": "NGm2u2KqL9xV4D8oU5fZM",
+      "type": "freedraw",
+      "x": 1212.5078354225143,
+      "y": 121.89608829334043,
+      "width": 8.946069181071152,
+      "height": 3.3547759429017106,
+      "angle": 0,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b4D",
+      "roundness": null,
+      "seed": 1869409870,
+      "version": 9,
+      "versionNonce": 1964641426,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1748475748585,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0.5591293238169328,
+          0
+        ],
+        [
+          2.2365172952677312,
+          -0.5591293238169612
+        ],
+        [
+          4.4730345905354625,
+          -1.1182586476339225
+        ],
+        [
+          6.709551885803421,
+          -2.2365172952678165
+        ],
+        [
+          8.38693985725422,
+          -2.7956466190847777
+        ],
+        [
+          8.946069181071152,
+          -3.3547759429017106
+        ],
+        [
+          8.946069181071152,
+          -3.3547759429017106
+        ]
+      ],
+      "pressures": [],
+      "simulatePressure": true,
+      "lastCommittedPoint": [
+        8.946069181071152,
+        -3.3547759429017106
+      ]
+    },
+    {
+      "id": "i0kV4k52McjbJ3KoOvDiC",
+      "type": "freedraw",
+      "x": 1210.2713181272463,
+      "y": 144.2612612460185,
+      "width": 5.5912932381695555,
+      "height": 5.591293238169527,
+      "angle": 0,
+      "strokeColor": "#2f9e44",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b4E",
+      "roundness": null,
+      "seed": 1782930382,
+      "version": 9,
+      "versionNonce": 541062930,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1748475749894,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0.5591293238169328,
+          1.118258647633894
+        ],
+        [
+          2.2365172952679586,
+          2.7956466190847493
+        ],
+        [
+          3.3547759429018242,
+          3.913905266718672
+        ],
+        [
+          4.47303459053569,
+          4.473034590535633
+        ],
+        [
+          5.5912932381695555,
+          5.032163914352566
+        ],
+        [
+          5.5912932381695555,
+          5.591293238169527
+        ],
+        [
+          5.5912932381695555,
+          5.591293238169527
+        ]
+      ],
+      "pressures": [],
+      "simulatePressure": true,
+      "lastCommittedPoint": [
+        5.5912932381695555,
+        5.591293238169527
       ]
     }
   ],
