@@ -3,11 +3,16 @@ import StarRating from "../../components/StarRating"
 import useGoogleBookById from "../../hooks/useGoogleBookById";
 import { useNavigate, useParams } from "react-router-dom";
 import { useAuthValue } from "../../context/AuthContext";
+import { useFetchDocuments } from "../../hooks/useFetchDocuments";
+import { useFetchDocument } from "../../hooks/useFetchDocument";
 
 const EditReview = () => {
     const {id} = useParams()
-    const { book, loading, error: hookError } = useGoogleBookById(id)
-    const [rating, setRating] = useState(0)
+    const {document: review, loading, error: fetchError} = useFetchDocument("reviews", id);
+
+    
+    const { book, loading: bookLoading, error: bookError } = useGoogleBookById(review?.bid)
+    const [rating, setRating] = useState(0);
     const [description, setDescription] = useState("");
     const [error, setError] = useState(null)
 
@@ -16,8 +21,6 @@ const EditReview = () => {
 
       const navigate = useNavigate();
     
-      const {insertDocument, response} = useInsertDocument("reviews");
-
       const {user} = useAuthValue()
     
       useEffect(() => {
@@ -27,8 +30,17 @@ const EditReview = () => {
           setTitle(info.title || '')
         }
       }, [book])
+
+      useEffect(() => {
+        if (review) {
+          setRating(review.rating || 0);
+          setDescription(review.description || "");
+          setCover(review.cover || '');
+          setTitle(review.title || '');
+        }
+      }, [review])
     
-      if (loading) return <p>Carregando...</p>
+      if (loading || bookLoading ) return <p>Carregando...</p>
       if (error) return <p>{error}</p>
 
 
@@ -40,19 +52,15 @@ const EditReview = () => {
     //! verify createdBy
     const handleSubmit = (e) => {
         e.preventDefault()
+        if (user.uid !== review.uid) {
+            setError("Você não pode editar essa avaliação")
+            return
+        }
         if (rating === 0) {
             setError("Faça uma avaliação")
         }
-        insertDocument({
-          bid: id,
-          rating,
-          description,
-          title,
-          cover,
-          owner: user.displayName,
-          uid: user.uid
-        });
-        alert("Avaliação feita!")
+        
+        alert("Edição feita!")
         navigate("/")
     }
 
@@ -65,7 +73,7 @@ const EditReview = () => {
                 <form onSubmit={handleSubmit} className="flex flex-col w-100 items-center">
                     <label className="my-5 w-full">
                     <h3 className="text-xl">Avaliação:</h3>
-                    <StarRating onRate={handleRating} /></label>
+                    <StarRating onRate={handleRating} initialRate={rating} /></label>
                     <label className="mb-5 w-full">
                         <h3 className="text-xl">Opinião:</h3>
                         <textarea
@@ -77,7 +85,7 @@ const EditReview = () => {
                             required
                             className="w-full outline-0"/>
                     </label>
-                    <button onClick={handleSubmit} className="btn mb-5">Avaliar!</button>
+                    <button onClick={handleSubmit} className="btn mb-5">Pronto!</button>
                     {error && <p className="error">É necessário uma nota de 1 à 5</p>}
                 </form>
             </div>

@@ -1,9 +1,11 @@
+//? this component is used to display a star rating system at the review and edit pages
+
 import { Star } from "lucide-react";
 import { useState } from "react";
 
-export default function StarRating({ max = 5, onRate }) {
+export default function StarRating({ max = 5, onRate, initialRate = 0 }) {
   const [hovered, setHovered] = useState(0);
-  const [rated, setRated] = useState(0);
+  const [rated, setRated] = useState(initialRate);
 
   const handleMouseEnter = (index) => setHovered(index);
   const handleMouseLeave = () => setHovered(0);
