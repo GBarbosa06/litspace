@@ -187,7 +187,7 @@ const Shelf = () => {
                           <img
                             src={book.cover}
                             alt={book.title}
-                            className="w-full rounded"
+                            className="max-w-full rounded inline-block"
                           />
                         )}
                         {showDate && (
@@ -270,7 +270,7 @@ const Shelf = () => {
                           <img
                             src={book.cover}
                             alt={book.title}
-                            className="w-full rounded"
+                            className="max-w-full rounded inline-block"
                           />
                         )}
                         {showDate && (
@@ -352,7 +352,7 @@ const Shelf = () => {
                           <img
                             src={book.cover}
                             alt={book.title}
-                            className="w-full rounded"
+                            className="max-w-full rounded inline-block"
                           />
                         )}
                         {showDate && (

@@ -58,7 +58,7 @@ const CreateReview = () => {
     }
 
     return (
-    <div className="flex flex-row items-start justify-center mt-20 mb-30">
+    <div className="flex flex-col-reverse m-3 items-center md:flex-row md:items-start gap-2 justify-center mt-20 mb-30">
             <div>
                 {title && <h1 className="text-3xl font-bold">{title}</h1>}
                 {!title && <h1 className="text-3xl font-bold">Livro</h1>}
