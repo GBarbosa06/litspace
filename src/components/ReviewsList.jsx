@@ -44,7 +44,7 @@ const ReviewsList = () => {
                 <p className="text-sm"> {rev.createdAt?.toDate().toLocaleString()}</p>
               </div>
               {user.uid === rev.uid && <div className="flex gap-2 cursor-pointer">
-                <Pencil className="hover:-translate-y-0.5" /> {/* not working */}
+                <Pencil className="hover:-translate-y-0.5" onClick={() => navigate("/edit/" + rev.id)} />
                 <Trash2 className="hover:-translate-y-0.5" onClick={() => {deleteDocument(rev.id)}} />
                 <BookOpen className="hover:-translate-y-0.5" onClick={() => navigate("/book/" + rev.bid)}/>
               </div>}
