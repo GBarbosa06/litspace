@@ -5,6 +5,8 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useAuthValue } from "../../context/AuthContext";
 import { useFetchDocuments } from "../../hooks/useFetchDocuments";
 import { useFetchDocument } from "../../hooks/useFetchDocument";
+import { doc, updateDoc } from "firebase/firestore";
+import { db } from "../../firebase/config";
 
 const EditReview = () => {
     const {id} = useParams()
@@ -32,7 +34,7 @@ const EditReview = () => {
       }, [book])
 
       useEffect(() => {
-        if (review) {
+        if (review && rating === 0) {
           setRating(review.rating || 0);
           setDescription(review.description || "");
           setCover(review.cover || '');
@@ -41,15 +43,27 @@ const EditReview = () => {
       }, [review])
     
       if (loading || bookLoading ) return <p>Carregando...</p>
-      if (error) return <p>{error}</p>
+      if (error || bookError) return <p>{error || bookError}</p>
 
 
-    const handleRating = (value) => {
+      const updateReview = async (rating, description) => {
+        try {
+          const reviewRef = doc(db, `reviews`, id);
+          await updateDoc(reviewRef, {
+            rating,
+            description,
+          })
+        }
+          catch (error){
+            console.log("Erro ao atualizar a avaliação", error)
+          }
+      }
+
+      const handleRating = (value) => {
         console.log("Nota escolhida: ", value)
         setRating(value);
     };
 
-    //! verify createdBy
     const handleSubmit = (e) => {
         e.preventDefault()
         if (user.uid !== review.uid) {
@@ -59,7 +73,8 @@ const EditReview = () => {
         if (rating === 0) {
             setError("Faça uma avaliação")
         }
-        
+        updateReview(rating, description)
+        setError(null)
         alert("Edição feita!")
         navigate("/")
     }
