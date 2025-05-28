@@ -26,10 +26,10 @@ const Shelf = () => {
     documents: books,
     loading,
     error,
-  } = useFetchDocuments(`users/${user.uid}/books`);
+  } = useFetchDocuments(`users/${user?.uid}/books`);
   const navigate = useNavigate();
 
-  const {deleteDocument} = useDeleteDocument(`users/${user.uid}/books`)
+  const {deleteDocument} = useDeleteDocument(`users/${user?.uid}/books`)
 
   useEffect(() => {
     const handleClickOutside = (e) => {
