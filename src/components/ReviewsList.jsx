@@ -52,7 +52,7 @@ const ReviewsList = () => {
                 </p>
               </div>
               {user?.uid === rev.uid && (
-                <div className="flex gap-2 cursor-pointer">
+                <div className="flex gap-2 cursor-pointer mt-2">
                   <Pencil
                     className="hover:-translate-y-0.5"
                     onClick={() => navigate("/edit/" + rev.id)}
@@ -73,7 +73,7 @@ const ReviewsList = () => {
             <img
               src={rev.cover}
               onClick={() => navigate("/book/" + rev.bid)}
-              className="w-full sm:w-auto hover:-translate-y-1.5 transition duration-150 cursor-pointer"
+              className="w-full sm:w-auto sm:max-h-40 hover:-translate-y-1.5 transition duration-150 cursor-pointer"
             />
           </li>
         ))}
