@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-full bg-[#2d2d44] p-6 text-white font-['Work_Sans']">
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center flex-wrap">
         <NavLink to="/" className="text-xl">
           Lit <span className="font-bold">Space</span>
         </NavLink>
@@ -24,9 +24,9 @@ const Navbar = () => {
         >
           <Menu /> 
         </button>
-      </div>
+      
       <ul
-        className={`md:flex md:items-center md:justify-end ${isMenuOpen ? "block" : "hidden"} mt-4 md:mt-0`}
+        className={`md:flex md:items-center md:justify-end ${isMenuOpen ? "block" : "hidden"} mt-4 md:mt-0 w-full md:w-auto`}
       >
         <li className="inline-block mx-4">
           <NavLink
@@ -78,6 +78,7 @@ const Navbar = () => {
           </li>
         )}
       </ul>
+      </div>
     </nav>
   );
 };
