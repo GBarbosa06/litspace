@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { Eye, EyeOff } from 'lucide-react';
 
 // hooks
@@ -118,7 +118,7 @@ const Register = () => {
       {!loading && <button className='btn'>Cadastrar</button>}
       {loading && <p className='text-[#ccc]'>Aguarde...</p>}
       {error && <p className='error'>{error}</p>}
-      <p className='text-sm text-[#696969]'>Já tem uma conta? <a href="/login" className='text-[#ccc] font-bold'>Faça login</a></p>
+      <p className='text-sm text-[#696969]'>Já tem uma conta? <Link to="/login" className='text-[#ccc] font-bold'>Faça login</Link></p>
     </form>
     </div>
   )

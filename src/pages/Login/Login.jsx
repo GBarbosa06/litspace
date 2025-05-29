@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { Eye, EyeOff } from 'lucide-react';
 
 // hooks
@@ -41,8 +41,8 @@ const Login = () => {
 
   return (
     <div className='flex flex-col mt-10 items-center h-screen '>
-      <h1 className='text-3xl font-bold'>Registro de usuário</h1>
-      <p className='text-sm text-[#696969] mb-5'>Crie uma conta para poder interagir</p>
+      <h1 className='text-3xl font-bold'>Login</h1>
+      <p className='text-sm text-[#696969] mb-5'>Entre com sua conta para poder interagir</p>
     <form className='flex flex-col justify-center items-center gap-5 w-[100%]' onSubmit={handleSubmit}>
       <Label>
           <span className=' text-[#ccc] font-bold'>Email: </span>
@@ -73,7 +73,7 @@ const Login = () => {
       {!loading && <button className='btn'>Entrar</button>}
       {loading && <p className='text-[#ccc]'>Aguarde...</p>}
       {error && <p className='error'>{error}</p>}
-      <p className='text-sm text-[#696969]'>Não tem uma conta? <a href="/login" className='text-[#ccc] font-bold'>Criar conta</a></p>
+      <p className='text-sm text-[#696969]'>Não tem uma conta? <Link to="/register" className='text-[#ccc] font-bold'>Criar conta</Link></p>
     </form>
     </div>
   )

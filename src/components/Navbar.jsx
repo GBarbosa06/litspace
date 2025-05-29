@@ -41,7 +41,7 @@ const Navbar = () => {
         {!user && (
           <li className="inline-block mx-4">
             <NavLink
-              to="/cadastro"
+              to="/register"
               className={({ isActive }) =>
                 isActive ? styles.isActive : undefined
               }
