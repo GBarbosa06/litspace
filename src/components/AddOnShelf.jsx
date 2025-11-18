@@ -20,11 +20,17 @@ const AddOnShelf = ({uid, bid, title, authors, cover}) => {
     }
 
   return (
-    <button 
-        className='p-3 bg-[#ffd369] hover:bg-amber-400 transition-colors duration-150 w-80 rounded-2xl cursor-pointer'
-        onClick={handleAddOnShelf}
-        >Adicionar à estante</button>
-  )
+    <div>
+      <button
+          className='p-3 bg-[#ffd369] hover:bg-amber-400 transition-colors duration-150 w-80 rounded-2xl cursor-pointer'
+          onClick={handleAddOnShelf}
+          >Fazer Emprestimo</button>
+          <button
+          className='p-3 bg-[#ffd369] hover:bg-amber-400 transition-colors duration-150 w-80 rounded-2xl cursor-pointer'
+          onClick={handleAddOnShelf}
+          >Reservar</button>
+    </div>
+    )
 }
 
 export default AddOnShelf
